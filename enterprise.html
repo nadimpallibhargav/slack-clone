@@ -1,0 +1,606 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title>Assignment</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">    
+        <link rel="stylesheet" href="css/bootstrap.min.css">
+        <link rel='stylesheet' href='css/slick.css'>
+        <link rel='stylesheet' href='css/slick-theme.css'>
+        <link rel="stylesheet" href="fonts/css/all.min.css"/>    
+        <link rel="stylesheet" href="css/style.css">
+        <link rel="stylesheet" href="css/nav.css">
+        <link rel="icon" href="img/icon.jpg" type="image/x-icon"/>        
+       
+    </head>
+    <body>
+        <header>
+            <nav>                
+                <div class="logo">
+                    <a href="index.html">
+                        <svg height="25" width="100" class="c-slacklogo--white" viewBox="0 0 240 60" xmlns="http://www.w3.org/2000/svg" shape-rendering="geometricPrecision"><title>Assignment</title><g fill="none"><path d="m75.663 47.477 2.929-6.846c3.207 2.375 7.39 3.632 11.574 3.632 3.068 0 5.02-1.187 5.02-3.003-.07-5.03-18.477-1.118-18.617-13.764-.07-6.427 5.648-11.387 13.737-11.387 4.81 0 9.622 1.188 13.038 3.913l-2.737 6.992c-3.143-2.021-7.025-3.43-10.72-3.43-2.51 0-4.184 1.187-4.184 2.725.07 4.96 18.618 2.235 18.827 14.322 0 6.567-5.579 11.178-13.528 11.178-5.856 0-11.225-1.397-15.34-4.332m116.629-9.325a8.498 8.498 0 0 1 -7.405 4.33c-4.698 0-8.506-3.816-8.506-8.523s3.808-8.523 8.506-8.523a8.498 8.498 0 0 1 7.405 4.33l8.143-4.52c-3.05-5.451-8.868-9.137-15.548-9.137-9.839 0-17.815 7.991-17.815 17.85 0 9.858 7.976 17.85 17.815 17.85 6.68 0 12.498-3.686 15.548-9.137zm-82.477 12.958h10.18v-49.86h-10.179zm95.761-49.86v49.86h10.18v-14.938l12.063 14.938h13.012l-15.34-17.746 14.224-16.559h-12.454l-11.505 13.767v-29.322zm-54.218 15.557v4.053c-1.673-2.795-5.787-4.751-10.11-4.751-8.925 0-15.967 7.895-15.967 17.815s7.042 17.885 15.967 17.885c4.323 0 8.437-1.956 10.11-4.751v4.052h10.18v-34.303zm0 21.414c-1.464 2.445-4.532 4.26-7.948 4.26-4.699 0-8.507-3.815-8.507-8.522s3.808-8.523 8.507-8.523c3.416 0 6.484 1.886 7.948 4.4z" fill="#ffffff"></path><path d="m21.902.148c-3.299 0-5.973 2.68-5.973 5.985a5.979 5.979 0 0 0 5.973 5.985h5.974v-5.985a5.98 5.98 0 0 0 -5.974-5.985m0 15.96h-15.929c-3.299 0-5.973 2.68-5.973 5.986 0 3.305 2.674 5.985 5.973 5.985h15.93c3.298 0 5.973-2.68 5.973-5.985 0-3.306-2.675-5.986-5.974-5.986" fill="#36c5f0"></path><path d="m59.734 22.094c0-3.306-2.675-5.986-5.974-5.986s-5.973 2.68-5.973 5.986v5.985h5.973a5.98 5.98 0 0 0 5.974-5.985m-15.929 0v-15.961a5.98 5.98 0 0 0 -5.974-5.985c-3.299 0-5.973 2.68-5.973 5.985v15.96c0 3.307 2.674 5.987 5.973 5.987a5.98 5.98 0 0 0 5.974-5.985" fill="#2eb67d"></path><path d="m37.831 60a5.98 5.98 0 0 0 5.974-5.985 5.98 5.98 0 0 0 -5.974-5.985h-5.973v5.985c0 3.305 2.674 5.985 5.973 5.985m0-15.96h15.93c3.298 0 5.973-2.68 5.973-5.986a5.98 5.98 0 0 0 -5.974-5.985h-15.929c-3.299 0-5.973 2.68-5.973 5.985a5.979 5.979 0 0 0 5.973 5.985" fill="#ecb22e"></path><path d="m0 38.054a5.979 5.979 0 0 0 5.973 5.985 5.98 5.98 0 0 0 5.974-5.985v-5.985h-5.974c-3.299 0-5.973 2.68-5.973 5.985m15.929 0v15.96c0 3.306 2.674 5.986 5.973 5.986a5.98 5.98 0 0 0 5.974-5.985v-15.961a5.979 5.979 0 0 0 -5.974-5.985c-3.299 0-5.973 2.68-5.973 5.985" fill="#e01e5a"></path></g></svg>
+                        <svg width="100" class="c-slacklogo--color" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 240 60" shape-rendering="geometricPrecision"><title>Assignment</title><path d="m75.663 47.477 2.929-6.846c3.207 2.375 7.39 3.632 11.574 3.632 3.068 0 5.02-1.187 5.02-3.003-.07-5.03-18.477-1.118-18.617-13.764-.07-6.427 5.648-11.387 13.737-11.387 4.81 0 9.622 1.188 13.038 3.913l-2.737 6.992c-3.143-2.021-7.025-3.43-10.72-3.43-2.51 0-4.184 1.187-4.184 2.725.07 4.96 18.618 2.235 18.827 14.322 0 6.567-5.579 11.178-13.528 11.178-5.856 0-11.225-1.397-15.34-4.332m116.629-9.325a8.498 8.498 0 0 1 -7.405 4.33c-4.698 0-8.506-3.816-8.506-8.523s3.808-8.523 8.506-8.523a8.498 8.498 0 0 1 7.405 4.33l8.143-4.52c-3.05-5.451-8.868-9.137-15.548-9.137-9.839 0-17.815 7.991-17.815 17.85 0 9.858 7.976 17.85 17.815 17.85 6.68 0 12.498-3.686 15.548-9.137zm-82.477 12.958h10.18v-49.86h-10.179zm95.761-49.86v49.86h10.18v-14.938l12.063 14.938h13.012l-15.34-17.746 14.224-16.559h-12.454l-11.505 13.767v-29.322zm-54.218 15.557v4.053c-1.673-2.795-5.787-4.751-10.11-4.751-8.925 0-15.967 7.895-15.967 17.815s7.042 17.885 15.967 17.885c4.323 0 8.437-1.956 10.11-4.751v4.052h10.18v-34.303zm0 21.414c-1.464 2.445-4.532 4.26-7.948 4.26-4.699 0-8.507-3.815-8.507-8.522s3.808-8.523 8.507-8.523c3.416 0 6.484 1.886 7.948 4.4z"></path><path d="m21.902.148c-3.299 0-5.973 2.68-5.973 5.985a5.979 5.979 0 0 0 5.973 5.985h5.974v-5.985a5.98 5.98 0 0 0 -5.974-5.985m0 15.96h-15.929c-3.299 0-5.973 2.68-5.973 5.986 0 3.305 2.674 5.985 5.973 5.985h15.93c3.298 0 5.973-2.68 5.973-5.985 0-3.306-2.675-5.986-5.974-5.986" fill="#36C5F0"></path><path d="m59.734 22.094c0-3.306-2.675-5.986-5.974-5.986s-5.973 2.68-5.973 5.986v5.985h5.973a5.98 5.98 0 0 0 5.974-5.985m-15.929 0v-15.961a5.98 5.98 0 0 0 -5.974-5.985c-3.299 0-5.973 2.68-5.973 5.985v15.96c0 3.307 2.674 5.987 5.973 5.987a5.98 5.98 0 0 0 5.974-5.985" fill="#2EB67D"></path><path d="m37.831 60a5.98 5.98 0 0 0 5.974-5.985 5.98 5.98 0 0 0 -5.974-5.985h-5.973v5.985c0 3.305 2.674 5.985 5.973 5.985m0-15.96h15.93c3.298 0 5.973-2.68 5.973-5.986a5.98 5.98 0 0 0 -5.974-5.985h-15.929c-3.299 0-5.973 2.68-5.973 5.985a5.979 5.979 0 0 0 5.973 5.985" fill="#ECB22E"></path><g><path d="m0 38.054a5.979 5.979 0 0 0 5.973 5.985 5.98 5.98 0 0 0 5.974-5.985v-5.985h-5.974c-3.299 0-5.973 2.68-5.973 5.985m15.929 0v15.96c0 3.306 2.674 5.986 5.973 5.986a5.98 5.98 0 0 0 5.974-5.985v-15.961a5.979 5.979 0 0 0 -5.974-5.985c-3.299 0-5.973 2.68-5.973 5.985" fill="#E01E5A"></path></g></svg>
+                    </a>
+                </div>
+                <li id="m-search-btn" class="s-mobile"> <i class="fa fa-search"></i> </li>
+                <div class="menu-icon">
+                    <span class="fas fa-bars"></span>
+                </div>
+                <div class="nav-items left">
+                    <svg width="100" class="c-slacklogo--color mobile" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 240 60" shape-rendering="geometricPrecision"><title>Assignment</title><path d="m75.663 47.477 2.929-6.846c3.207 2.375 7.39 3.632 11.574 3.632 3.068 0 5.02-1.187 5.02-3.003-.07-5.03-18.477-1.118-18.617-13.764-.07-6.427 5.648-11.387 13.737-11.387 4.81 0 9.622 1.188 13.038 3.913l-2.737 6.992c-3.143-2.021-7.025-3.43-10.72-3.43-2.51 0-4.184 1.187-4.184 2.725.07 4.96 18.618 2.235 18.827 14.322 0 6.567-5.579 11.178-13.528 11.178-5.856 0-11.225-1.397-15.34-4.332m116.629-9.325a8.498 8.498 0 0 1 -7.405 4.33c-4.698 0-8.506-3.816-8.506-8.523s3.808-8.523 8.506-8.523a8.498 8.498 0 0 1 7.405 4.33l8.143-4.52c-3.05-5.451-8.868-9.137-15.548-9.137-9.839 0-17.815 7.991-17.815 17.85 0 9.858 7.976 17.85 17.815 17.85 6.68 0 12.498-3.686 15.548-9.137zm-82.477 12.958h10.18v-49.86h-10.179zm95.761-49.86v49.86h10.18v-14.938l12.063 14.938h13.012l-15.34-17.746 14.224-16.559h-12.454l-11.505 13.767v-29.322zm-54.218 15.557v4.053c-1.673-2.795-5.787-4.751-10.11-4.751-8.925 0-15.967 7.895-15.967 17.815s7.042 17.885 15.967 17.885c4.323 0 8.437-1.956 10.11-4.751v4.052h10.18v-34.303zm0 21.414c-1.464 2.445-4.532 4.26-7.948 4.26-4.699 0-8.507-3.815-8.507-8.522s3.808-8.523 8.507-8.523c3.416 0 6.484 1.886 7.948 4.4z"></path><path d="m21.902.148c-3.299 0-5.973 2.68-5.973 5.985a5.979 5.979 0 0 0 5.973 5.985h5.974v-5.985a5.98 5.98 0 0 0 -5.974-5.985m0 15.96h-15.929c-3.299 0-5.973 2.68-5.973 5.986 0 3.305 2.674 5.985 5.973 5.985h15.93c3.298 0 5.973-2.68 5.973-5.985 0-3.306-2.675-5.986-5.974-5.986" fill="#36C5F0"></path><path d="m59.734 22.094c0-3.306-2.675-5.986-5.974-5.986s-5.973 2.68-5.973 5.986v5.985h5.973a5.98 5.98 0 0 0 5.974-5.985m-15.929 0v-15.961a5.98 5.98 0 0 0 -5.974-5.985c-3.299 0-5.973 2.68-5.973 5.985v15.96c0 3.307 2.674 5.987 5.973 5.987a5.98 5.98 0 0 0 5.974-5.985" fill="#2EB67D"></path><path d="m37.831 60a5.98 5.98 0 0 0 5.974-5.985 5.98 5.98 0 0 0 -5.974-5.985h-5.973v5.985c0 3.305 2.674 5.985 5.973 5.985m0-15.96h15.93c3.298 0 5.973-2.68 5.973-5.986a5.98 5.98 0 0 0 -5.974-5.985h-15.929c-3.299 0-5.973 2.68-5.973 5.985a5.979 5.979 0 0 0 5.973 5.985" fill="#ECB22E"></path><g><path d="m0 38.054a5.979 5.979 0 0 0 5.973 5.985 5.98 5.98 0 0 0 5.974-5.985v-5.985h-5.974c-3.299 0-5.973 2.68-5.973 5.985m15.929 0v15.96c0 3.306 2.674 5.986 5.973 5.986a5.98 5.98 0 0 0 5.974-5.985v-15.961a5.979 5.979 0 0 0 -5.974-5.985c-3.299 0-5.973 2.68-5.973 5.985" fill="#E01E5A"></path></g></svg>
+                    <ul class="nav navbar-nav desk">               
+                        <li class="dropdown">
+                          <a href="#" class="dropdown-toggle" data-toggle="dropdown">Product </a><i class="fas fa-chevron-down"></i>
+                          <ul class="dropdown-menu">
+                            <li><a href="#">Features</a></li>
+                            <li><a href="#">Channels</a></li>
+                            <li><a href="#">Your Digital HQ</a></li>
+                            <li><a href="#">Integrations</a></li>
+                            <li><a href="#">Security</a></li>
+                            <li><a href="#">Slack Connect</a></li>
+                            <li><a href="#">Solutions</a></li>
+                            <li><a href="#">Customers</a></li>
+                            <hr>
+                            <li><a href="#"><i class="fas fa-cloud-download-alt"></i> Download Slack</a></li>
+                          </ul>
+                        </li>
+                    </ul>
+                    <div class="dropdown mobile">
+                        <a class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        Product
+                        </a><i class="fas fa-chevron-down"></i>
+                        <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                        <a class="dropdown-item" href="#">Features</a>
+                        <a class="dropdown-item" href="#">Channels</a>
+                        <a class="dropdown-item" href="#">Your Digital HQ</a>
+                        <a class="dropdown-item" href="#">Integrations</a>
+                        <a class="dropdown-item" href="#">Security</a>
+                        <a class="dropdown-item" href="#">Slack Connect</a>
+                        <a class="dropdown-item" href="#">Solutions</a>
+                        <a class="dropdown-item" href="#">Customers</a>
+                        </div>
+                    </div>  
+                    <li><a href="enterprise.html">Enterprise</a></li>
+                    <li><a href="resources.html">Resources</a></li>
+                    <li><a href="pricing.html">Pricing</a></li>    
+                    <li id="search-btn" class="s-desk"><span class="search-icon"> <i class="fa fa-search"></i> </span></li>  
+                    <li><a href="#">Sign in</a></li> 
+                    <li class="talk"><a href="#" class="talk">TALK TO SALES</a></li>
+                    <li class="try"><a href="#"  class="try">TRY FOR FREE</a></li>
+                    <li class="download">
+                        <ul>
+                            <li class="talk signin"><a href="#" class="talk">SIGN IN </a></li>
+                            <li class="try download"><a href="#"  class="try">DOWNLOAD SLACK</a></li>
+                        </ul>
+                    </li>
+                        
+                </div>                                        
+                <div class="cancel-icon">
+                    <span class="fas fa-times"></span>
+                </div>
+                <div id="search-wrap" class="wrap-top search-wrap">
+                    <div class="width">
+                        <ul class="clearfix">                            
+                            <li class="searchleft">
+                                <svg width="150" class="c-slacklogo--color search" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 240 60" shape-rendering="geometricPrecision"><title>Slack</title><path d="m75.663 47.477 2.929-6.846c3.207 2.375 7.39 3.632 11.574 3.632 3.068 0 5.02-1.187 5.02-3.003-.07-5.03-18.477-1.118-18.617-13.764-.07-6.427 5.648-11.387 13.737-11.387 4.81 0 9.622 1.188 13.038 3.913l-2.737 6.992c-3.143-2.021-7.025-3.43-10.72-3.43-2.51 0-4.184 1.187-4.184 2.725.07 4.96 18.618 2.235 18.827 14.322 0 6.567-5.579 11.178-13.528 11.178-5.856 0-11.225-1.397-15.34-4.332m116.629-9.325a8.498 8.498 0 0 1 -7.405 4.33c-4.698 0-8.506-3.816-8.506-8.523s3.808-8.523 8.506-8.523a8.498 8.498 0 0 1 7.405 4.33l8.143-4.52c-3.05-5.451-8.868-9.137-15.548-9.137-9.839 0-17.815 7.991-17.815 17.85 0 9.858 7.976 17.85 17.815 17.85 6.68 0 12.498-3.686 15.548-9.137zm-82.477 12.958h10.18v-49.86h-10.179zm95.761-49.86v49.86h10.18v-14.938l12.063 14.938h13.012l-15.34-17.746 14.224-16.559h-12.454l-11.505 13.767v-29.322zm-54.218 15.557v4.053c-1.673-2.795-5.787-4.751-10.11-4.751-8.925 0-15.967 7.895-15.967 17.815s7.042 17.885 15.967 17.885c4.323 0 8.437-1.956 10.11-4.751v4.052h10.18v-34.303zm0 21.414c-1.464 2.445-4.532 4.26-7.948 4.26-4.699 0-8.507-3.815-8.507-8.522s3.808-8.523 8.507-8.523c3.416 0 6.484 1.886 7.948 4.4z"></path><path d="m21.902.148c-3.299 0-5.973 2.68-5.973 5.985a5.979 5.979 0 0 0 5.973 5.985h5.974v-5.985a5.98 5.98 0 0 0 -5.974-5.985m0 15.96h-15.929c-3.299 0-5.973 2.68-5.973 5.986 0 3.305 2.674 5.985 5.973 5.985h15.93c3.298 0 5.973-2.68 5.973-5.985 0-3.306-2.675-5.986-5.974-5.986" fill="#36C5F0"></path><path d="m59.734 22.094c0-3.306-2.675-5.986-5.974-5.986s-5.973 2.68-5.973 5.986v5.985h5.973a5.98 5.98 0 0 0 5.974-5.985m-15.929 0v-15.961a5.98 5.98 0 0 0 -5.974-5.985c-3.299 0-5.973 2.68-5.973 5.985v15.96c0 3.307 2.674 5.987 5.973 5.987a5.98 5.98 0 0 0 5.974-5.985" fill="#2EB67D"></path><path d="m37.831 60a5.98 5.98 0 0 0 5.974-5.985 5.98 5.98 0 0 0 -5.974-5.985h-5.973v5.985c0 3.305 2.674 5.985 5.973 5.985m0-15.96h15.93c3.298 0 5.973-2.68 5.973-5.986a5.98 5.98 0 0 0 -5.974-5.985h-15.929c-3.299 0-5.973 2.68-5.973 5.985a5.979 5.979 0 0 0 5.973 5.985" fill="#ECB22E"></path><g><path d="m0 38.054a5.979 5.979 0 0 0 5.973 5.985 5.98 5.98 0 0 0 5.974-5.985v-5.985h-5.974c-3.299 0-5.973 2.68-5.973 5.985m15.929 0v15.96c0 3.306 2.674 5.986 5.973 5.986a5.98 5.98 0 0 0 5.974-5.985v-15.961a5.979 5.979 0 0 0 -5.974-5.985c-3.299 0-5.973 2.68-5.973 5.985" fill="#E01E5A"></path></g></svg>
+                                <i class="fa fa-search"></i> 
+                                <input type='search' placeholder="Find anything (ie. channels, emoji, or reset password)"  list=text_editors>                                
+                                <datalist id="text_editors">
+                                    <select multiple size=8>
+                                    <option value="What is Slack Frontiers and why should I attend?">What is Slack Frontiers and why should I attend?
+                                    <option value="What is Slack Connect?">What is Slack Connect?		
+                                    <option value="Working with external organizations in Slack">Working with external organizations in Slack                                    
+                                    <option value="What is Slack Frontiers and why should I?">What is Slack Frontiers and why should I
+                                    <option value="What is Connect?">What is Connect?		
+                                    <option value="Working with external organizations in Slack">Working with external organizations in Slack                                    
+                                    </select>
+                                </datalist>
+                            </li>                    
+                            <li id="li-4"> <i class="fa fa-times"></i> </li>
+                            <li id="li-3"><a class="search-btn">Search</a></li>
+                        </ul>
+                    </div>
+                </div>          
+            </nav>
+        </header>
+        <main class="enterprisepage">
+            <section class="secone">
+                <div class="container-fluid">
+                    <div class="row">
+                        <div class="col-xl-7 col-lg-7 col-md-7 col-sm-12 col-xs-12 pl-0">
+                            <div class="secone__left">
+                                <div class="secone__heading">
+                                    <p>ENTERPRISE</p>
+                                    <h1>Built with enterprises, for enterprises</h1>
+                                </div>
+                                <div class="secone__para">
+                                    <p>Slack is secure. It’s flexible. It’s software that people actually enjoy using. And it’s here to help your business.</p>
+                                </div>
+                                <div class="secone__list">
+                                    <p>Learn how Slack supports organisations of all sizes:</p>
+                                    <div class="row">
+                                        <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12 col-xs-12 pl-0">
+                                            <ul class="my-0">
+                                                <li><a href=""><i class="fas fa-check-circle"></i>SCALE</a></li>
+                                                <li><a href=""><i class="fas fa-check-circle"></i>ENGAGEMENT</a></li>
+                                                <li><a href=""><i class="fas fa-check-circle"></i>SLACK CONNECT</a></li>                                        
+                                            </ul>
+                                        </div>
+                                        <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12 col-xs-12 pl-0 pt-0">
+                                            <ul>
+                                                <li><a href=""><i class="fas fa-check-circle"></i>SECURITY</a></li>
+                                                <li><a href=""><i class="fas fa-check-circle"></i>PLATFORM</a></li>
+                                            </ul>
+                                        </div>
+                                    </div>                                    
+                                </div>
+                                <div class="secone__btns row mx-0">
+                                    <a href="#" class="newbtn btn-pinkbtnfill mt-2">CONTACT SALES</a>                                    
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-xl-5 col-lg-5 col-md-5 col-sm-12 col-xs-12 px-0 rg">
+                            <div class="secone__right">
+                                <video autoplay  width="450">
+                                    <source src="img/enterprise/enterprise-hero.IN.mp4" type="video/mp4">                                 
+                                </video>
+                            </div>
+                        </div>
+                    </div>
+                </div>                
+            </section>
+
+            <section class="sectwo">
+                <div class="container-fluid">
+                    <div class="sectwo__slider enterprisesliderone">
+                        <div class="sectwo__slides"><img class="img img-responsive first" src="img/enterprise/logo-seek.png" alt="image" width="102" height="40"></div>
+                        <div class="sectwo__slides"><img class="img img-responsive" src="img/enterprise/logo-xero.png" alt="image" width="50" height="50"> </div>
+                        <div class="sectwo__slides"><img class="img img-responsive" src="img/enterprise/rea.png" alt="image" width="154" height="40">   </div>
+                        <div class="sectwo__slides"><img class="img img-responsive" src="img/enterprise/rmit.png" alt="image" width="118" height="40">           </div>
+                        <div class="sectwo__slides"><img class="img img-responsive" src="img/enterprise/ibm.png" alt="image" width="70" height="28">   </div>
+                        <div class="sectwo__slides"><img class="img img-responsive" src="img/enterprise/deliveroo.png" alt="image" width="143" height="38">     </div>                        
+                    </div>
+                </div>            
+            </section>
+
+            <section class="secthree">
+                <div class="container-fluid">
+                    <div class="row">
+                        <div class="col-xl-6 col-lg-6 col-md-12 col-sm-12 col-xs-12 pl-0">
+                            <div class="secthree__left">
+                                <div class="secthree__heading">
+                                    <p>SCALE</p>
+                                    <h3>Created to meet the needs of global organisations</h3>
+                                    <p><i class="fas fa-check-circle"></i> Get peace of mind with 99.99% uptime SLA</p>
+                                    <p><i class="fas fa-check-circle"></i> Customise Slack to your business with unlimited workspaces and channels</p>
+                                    <p><i class="fas fa-check-circle"></i> Govern all of your users and teams from a single place</p>
+                                    <a href="#" class="link-text">Learn more about Slack at scale <i class="fas fa-long-arrow-alt-right"></i></a>
+                                </div>
+                                <div class="secthree__para">
+                                    <p><i>'Slack has been the hammer that has helped us tear down the walls of silos. It has enabled us to position Slack as the operating system of collaboration across 194 countries and 171 offices, pulling us together like nothing else has.'</i></p>
+                                    <img src="img/enterprise/fox.png" alt="image" width="72" height="30">
+                                    <p><b>Jeff Dow</b>, Executive Vice President, Media and Broadcast Operations</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-xl-6 col-lg-6 col-md-12 col-sm-12 col-xs-12 rg">
+                            <div class="secthree__right">
+                                <video autoplay loop width="584">
+                                    <source src="img/enterprise/scale.IN.mp4" type="video/mp4">                                 
+                                </video>
+                            </div>
+                        </div>
+                    </div>
+                </div>                
+            </section>
+            
+            <section class="secthree secfour">
+                <div class="container-fluid">
+                    <div class="row">
+                        <div class="col-xl-6 col-lg-6 col-md-12 col-sm-12 col-xs-12 pl-0">
+                            <div class="secthree__left">
+                                <div class="secthree__heading">
+                                    <p>SECURITY</p>
+                                    <h3>Enterprise-grade data protection</h3>
+                                    <p><i class="fas fa-check-circle"></i> Meet compliance needs and regulatory requirements like FINRA, HIPAA and FedRAMP</p>
+                                    <p><i class="fas fa-check-circle"></i> Rest assured that Slack is using industry-accepted best practices and frameworks                                    </p>
+                                    <p><i class="fas fa-check-circle"></i> Secure your data with innovative features like Slack Enterprise Key Management</p>
+                                    <a href="#" class="link-text">Learn more about security <i class="fas fa-long-arrow-alt-right"></i></a>
+                                </div>
+                                <div class="secthree__para">
+                                    <p><i>'With the introduction of Slack Enterprise Key Management as an added security feature, we immediately saw its value in giving us total control of our data and the assurance that we’re protected in the event of a security threat in our supply chain.'</i></p>
+                                    <img src="img/enterprise/crowdstrike.png" alt="image" width="162" height="30">
+                                    <p><b>Colin Black</b>, Chief Operating Officer</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-xl-6 col-lg-6 col-md-12 col-sm-12 col-xs-12 rg">
+                            <div class="secthree__right">
+                                <video autoplay loop width="584">
+                                    <source src="img/enterprise/security.IN.mp4" type="video/mp4">                                 
+                                </video>
+                            </div>
+                        </div>
+                    </div>
+                </div>                
+            </section>
+
+            <section class="secthree secfive">
+                <div class="container-fluid">
+                    <div class="row">
+                        <div class="col-xl-6 col-lg-6 col-md-12 col-sm-12 col-xs-12 pl-0">
+                            <div class="secthree__left">
+                                <div class="secthree__heading">
+                                    <p>ENGAGEMENT</p>
+                                    <h3>Engagement, not installations, is how work gets done</h3>
+                                    <p><i class="fas fa-check-circle"></i> Work in a way that feels natural to you, supported by a simple, intuitive user experience</p>
+                                    <p><i class="fas fa-check-circle"></i> Automate away routine tasks with custom workflows – no code needed</p>
+                                    <p><i class="fas fa-check-circle"></i> Keep projects moving, wherever you are, on desktop or mobile</p>
+                                    <a href="#" class="link-text">Learn more about how Slack fuels engagement <i class="fas fa-long-arrow-alt-right"></i></a>
+                                </div>
+                                <div class="secfive__percent">
+                                    <div class="row">
+                                        <div class="col-xl-4 col-lg-4 col-md-4 col-sm-6 col-xs-6 pl-0">
+                                            <div>
+                                                <p><span>24%</span></p>
+                                                <p>faster to reach full employee productivity <sup>1</sup></p>
+                                            </div>
+                                       
+                                            <div>
+                                                <img src="img/enterprise/idc.png" alt="image" width="115" height="30">
+                                            </div>
+                                        </div>
+                                        <div class="col-xl-8 col-lg-8 col-md-8 col-sm-6 col-xs-6">
+                                           <div>
+                                            <p><span>30%</span></p>
+                                            <p>fewer emails <sup>2</sup></p>
+                                           </div>
+                                            <div>
+                                                <img src="img/enterprise/td-ameritrade.png" alt="image" width="154" height="30">
+                                            </div>
+                                        </div>                                                                                
+                                        <div class="col-xl-12 pl-0">
+                                            <p><a href="#">¹Source</a>: IDC ‘The Business Value of Slack’</p>
+                                            <p><a href="#">²Source</a>: ComputerWorld, ‘TD Ameritrade cuts email use by 30% after Slack rollout’, 2019</p>
+                                        </div>
+                                    </div>                                    
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-xl-6 col-lg-6 col-md-12 col-sm-12 col-xs-12 rg">
+                            <div class="secthree__right">
+                                <video autoplay loop width="584" >
+                                    <source src="img/enterprise/engagement.IN.mp4" type="video/mp4">                                 
+                                </video>
+                            </div>
+                        </div>
+                    </div>
+                </div>                
+            </section>
+
+            <section class="secthree secsix">
+                <div class="container-fluid">
+                    <div class="row">
+                        <div class="col-xl-6 col-lg-6 col-md-12 col-sm-12 col-xs-12 pl-0">
+                            <div class="secthree__left">
+                                <div class="secthree__heading">
+                                    <p>PLATFORM</p>
+                                    <h3>Apps that boost productivity and scale with you</h3>
+                                    <p><i class="fas fa-check-circle"></i> Ensure that third-party apps are compliant</p>
+                                    <p><i class="fas fa-check-circle"></i> Standardise app permissions across your organisation </p>
+                                    <p><i class="fas fa-check-circle"></i> Drive usage with more than 2,400 apps</p>
+                                    <a href="#" class="link-text">Learn more about apps and integrations <i class="fas fa-long-arrow-alt-right"></i></a>
+                                </div>
+                                <div class="secsix__images">
+                                    <div class="row">
+                                        <div class="col-3"><img src="img/enterprise/zoom.png" alt="img" width="55" height="54"></div>
+                                        <div class="col-3"><img src="img/enterprise/outlook.png" alt="img" width="54" height="54"></div>
+                                        <div class="col-3"><img src="img/enterprise/google-drive.png" alt="img" width="54" height="54"></div>
+                                        <div class="col-3"><img src="img/enterprise/salesforce.png" alt="img" width="54" height="54"></div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-3"><img src="img/enterprise/service-now.png" alt="img" width="55" height="54"></div>
+                                        <div class="col-3"><img src="img/enterprise/onedrive.png" alt="img" width="55" height="54"></div>
+                                        <div class="col-3"><img src="img/enterprise/gmail.png" alt="img" width="55" height="54"></div>
+                                        <div class="col-3"><img src="img/enterprise/dropbox.png" alt="img" width="55" height="54"></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-xl-6 col-lg-6 col-md-12 col-sm-12 col-xs-12 rg">
+                            <div class="secthree__right">
+                                <video autoplay loop width="584">
+                                    <source src="img/enterprise/platform.IN.mp4" type="video/mp4">                                 
+                                </video>
+                            </div>
+                        </div>
+                    </div>
+                </div>                
+            </section>
+            
+            <section class="secthree secseven">
+                <div class="container-fluid">
+                    <div class="row">
+                        <div class="col-xl-6 col-lg-6 col-md-12 col-sm-12 col-xs-12 pl-0">
+                            <div class="secthree__left">
+                                <div class="secthree__heading">
+                                    <p>SLACK CONNECT</p>
+                                    <h3>Work with external organisations, securely</h3>
+                                    <p><i class="fas fa-check-circle"></i> Retain your data security practices while collaborating with trusted organisations</p>
+                                    <p><i class="fas fa-check-circle"></i> Connect with employees, customers and partners in a single place</p>
+                                    <p><i class="fas fa-check-circle"></i> Reduce context switching, increase transparency and speed up work</p>
+                                    <a href="#" class="link-text">Learn how Slack Connect works <i class="fas fa-long-arrow-alt-right"></i></a>
+                                </div>
+                                <div class="secthree__para">
+                                    <p><i>'Having all of the information about a specific partner available at once is super-important. We have a direct line of communication to our counterparts at the companies that we work with most frequently.'</i></p>
+                                    <img src="img/enterprise/zendesk.png" alt="image" width="130" height="30">
+                                    <p><b>Mike Yakovlev</b>, Manager of Technology Alliances</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-xl-6 col-lg-6 col-md-12 col-sm-12 col-xs-12 pl-0 rg">
+                            <div class="secthree__right">
+                                <video autoplay loop width="584" >
+                                    <source src="img/enterprise/slack-connect.IN.mp4" type="video/mp4">                                 
+                                </video>
+                            </div>
+                        </div>
+                    </div>
+                </div>                
+            </section>
+
+            <section class="seceight">
+                <hr>
+                <div class="container-fluid">                    
+                    <h3>Explore more about working in Slack</h3>
+                    <div class="slidereight seceight__slider">
+                        <div class="seceight__slides">
+                            <div class="seceight__box">
+                                <img src="img/enterprise/promo-forrester-01.jpg" alt="image" width="260" height="180">
+                                <p>Report</p>
+                                <h4>ROI calculator: determine the value of Slack for your team</h4>
+                                <div class="link">TRY IT NOW <i class="fas fa-long-arrow-alt-right"></i></div>
+                            </div>
+                        </div>
+                                             
+                        <div class="seceight__slides">
+                            <div class="seceight__box">
+                                <img src="img/enterprise/promo-forrester-02.jpg" alt="image" width="260" height="180">
+                                <p>Report</p>
+                                <h4>Forrester runs the numbers on the business value of Slack</h4>
+                                <div class="link">Learn more<i class="fas fa-long-arrow-alt-right"></i></div>
+                            </div>
+                        </div>
+                                             
+                        <div class="seceight__slides">
+                            <div class="seceight__box">
+                                <img src="img/enterprise/how-fastly-uses-shared-channels-to-wow-enterprise-customers.jpg" alt="image" width="260" height="180">
+                                <p>Customer stories</p>
+                                <h4>How Fastly uses Slack to wow enterprise customers</h4>
+                                <div class="link">Read story <i class="fas fa-long-arrow-alt-right"></i></div>
+                            </div>
+                        </div>
+                                             
+                        <div class="seceight__slides">
+                            <div class="seceight__box">
+                                <img src="img/enterprise/slack-connect-a-better-way-to-work-with-people-outside-your-company.jpg" alt="image" width="260" height="180">
+                                <p>Resource</p>
+                                <h4>Slack Connect: A better way to work with people outside your company</h4>
+                                <div class="link">Read now <i class="fas fa-long-arrow-alt-right"></i></div>
+                            </div>
+                        </div>
+                                             
+                    </div>
+                </div>            
+            </section>
+            
+            <section class="secnine">
+                <div class="container-fluid">   
+                    <h3>Frequently asked questions</h3>      
+                    <div class="accordion" id="faq">
+                        <div class="card">
+                            <div class="card-header" id="faqhead1">
+                                <a href="#" class="btn-header-link collapsed" data-toggle="collapse" data-target="#faq1"
+                                aria-expanded="true" aria-controls="faq1">Is Slack secure?</a>
+                            </div>
+    
+                            <div id="faq1" class="collapse" aria-labelledby="faqhead1" data-parent="#faq">
+                                <div class="card-body">
+                                    <p>Yes. You can securely discuss confidential information in Slack. Slack offers multiple ways to ensure that your information, conversations and files stay safe. Slack delivers enterprise-grade security at every layer, adhering to multiple compliance certifications, including SOC 2, SOC 3, ISO/IEC 27001 and more. Slack is GDPR-compliant and can be configured for HIPAA and FINRA compliance. It is FedRAMP Moderate authorised.</p>                                    
+                                    <p>In addition, Slack offers security features, like Enterprise Key Management, that allow admins fine-grained control over data encryption. You can also integrate your own security tools with Slack to get instant notification if a threat is detected. Learn more about Slack’s comprehensive security programme <a href="#">here</a>.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card">
+                            <div class="card-header" id="faqhead2">
+                                <a href="#" class="btn-header-link collapsed" data-toggle="collapse" data-target="#faq2"
+                                aria-expanded="true" aria-controls="faq2">What is Enterprise Grid?</a>
+                            </div>
+    
+                            <div id="faq2" class="collapse" aria-labelledby="faqhead2" data-parent="#faq">
+                                <div class="card-body">
+                                   <p>Enterprise Grid is Slack’s solution for large or complex organisations. It empowers your company to work with the agility of a small company while tapping into the resources and shared knowledge of your enterprise.</p>
+                                   <p>Enterprise Grid includes all of the security and governance functionality that you’d expect in an enterprise solution but with an intuitive, consumer-like experience that drives adoption. Enterprise Grid powers the work of some of the world’s largest companies – such as IBM, Condé Nast, Oracle and E-Trade – and is the only collaboration product that can support up to 500,000 people.</p>
+                                   <p>Enterprise Grid is a paid subscription. Compare plan features and pricing <a href="#">here</a>.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card">
+                            <div class="card-header" id="faqhead3">
+                                <a href="#" class="btn-header-link collapsed" data-toggle="collapse" data-target="#faq3"
+                                aria-expanded="true" aria-controls="faq3">Is Slack more secure than email? </a>
+                            </div>
+    
+                            <div id="faq3" class="collapse" aria-labelledby="faqhead3" data-parent="#faq">
+                                <div class="card-body">
+                                   <p>Yes! Unlike email, Slack is not susceptible to spam or phishing, which causes 90% of data breaches. Your Slack handle cannot be sold to advertisers or put on a mailing list. You will only ever receive Slack messages from other people inside your organisation, or from trusted partners using Slack Connect. You may get notifications from apps integrated with your workspace, such as Asana, Google Docs or Jira.</p>
+                                   <p>Slack offers enterprise-grade data protection and privacy. Granular controls allow admins to customise security for each user, so no one sees things that they shouldn’t. Learn more about how Slack can securely replace email inside your company.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card">
+                            <div class="card-header" id="faqhead4">
+                                <a href="#" class="btn-header-link collapsed" data-toggle="collapse" data-target="#faq4"
+                                aria-expanded="true" aria-controls="faq4">What is a Slack channel? </a>
+                            </div>
+    
+                            <div id="faq4" class="collapse" aria-labelledby="faqhead4" data-parent="#faq">
+                                <div class="card-body">
+                                   <p>Channels are where work happens in Slack. A channel is a single place for a team to share messages, tools and files. People often create channels for company announcements, customer support triage, asking for IT or HR help and sharing social interests.</p>
+                                   <p>Channels can be public (open to everyone at the organisation) or private (invite-only). In addition, organisations on a paid Slack subscription can share a channel with external partners like agencies, clients and vendors with Slack Connect. Learn more about how channels can speed up your daily work here.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card">
+                            <div class="card-header" id="faqhead5">
+                                <a href="#" class="btn-header-link collapsed" data-toggle="collapse" data-target="#faq5"
+                                aria-expanded="true" aria-controls="faq5">How do businesses use Slack? </a>
+                            </div>
+    
+                            <div id="faq5" class="collapse" aria-labelledby="faqhead5" data-parent="#faq">
+                                <div class="card-body">
+                                   <p>Slack helps organisations bring their people and tools together in one place so that they can stay productive and aligned from anywhere. More than 750,000 businesses use Slack every day for team messaging, file sharing and video/voice calls. You can integrate thousands of tools, like Google Drive, Zoom and Salesforce or create custom bots or apps just for your organisation. Find out more about how Slack works here.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card">
+                            <div class="card-header" id="faqhead6">
+                                <a href="#" class="btn-header-link collapsed" data-toggle="collapse" data-target="#faq6"
+                                aria-expanded="true" aria-controls="faq6">What is Slack Connect? </a>
+                            </div>
+    
+                            <div id="faq6" class="collapse" aria-labelledby="faqhead6" data-parent="#faq">
+                                <div class="card-body">
+                                   <p>Slack Connect is a more secure and productive way for organisations to communicate together. It lets you move all the conversations with your external partners, clients, vendors and others into Slack, replacing email and fostering collaboration. Slack’s enterprise-grade security features and compliance standards, like Enterprise Key Management, extend to Slack Connect. Learn more about Slack Connect here.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card">
+                            <div class="card-header" id="faqhead7">
+                                <a href="#" class="btn-header-link collapsed" data-toggle="collapse" data-target="#faq7"
+                                aria-expanded="true" aria-controls="faq7">How is Slack Connect different from Enterprise Grid? </a>
+                            </div>
+    
+                            <div id="faq7" class="collapse" aria-labelledby="faqhead7" data-parent="#faq">
+                                <div class="card-body">
+                                   <p>Slack Connect is a feature of Slack that enables people at up to 20 organisations to work together in a central place, without leaving their own Slack workspaces. Enterprise Grid, on the other hand, is a Slack subscription that lets you connect multiple workspaces inside your company.</p>
+                                   <p>Slack Connect is included as part of all paid Slack subscriptions. So if your organisation is on Enterprise Grid, you’re also able to use Slack Connect. Compare subscriptions and features here.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+           
+
+        </main>
+        <footer class="secfooter">
+            <div class="secfootertop">
+               <div class="container-fluid">
+                    <h2>Choose a better way to work</h2>
+                    <div class="secfootertop__btn">
+                        <a href="#" class="newbtn btn-pinkbtnborder mt-2">TALK TO SALES</a>
+                    </div>
+               </div>
+            </div>
+            <div class="secfooterbottom">
+                <div class="container-fluid">
+                    <div class="row logo">
+                        <div class="col-xl-2 col-lg-2 colmd-2 col-sm-12 col-xs-12">
+                            <img src="img/foot-logo.jpg" alt="image" width="57" height="56">
+                        </div>
+                        <div class="col-xl-2 col-lg-2 colmd-2 col-sm-12 col-xs-12">
+                            <details id="myDetailsone">
+                                <summary>WHY SLACK? <i class="fas fa-chevron-down"></i></summary>
+                                <ul>
+                                  <li><a href="#">Slack vs email</a></li>
+                                  <li><a href="#">Channels</a></li>
+                                  <li><a href="#">Engagement</a></li>
+                                  <li><a href="#">Scale</a></li>
+                                  <li><a href="#">Watch the demo</a></li>
+                                </ul>
+                            </details>
+                        </div>
+                        <div class="col-xl-2 col-lg-2 colmd-2 col-sm-12 col-xs-12">
+                            <details  id="myDetailstwo">
+                                <summary>PRODUCT  <i class="fas fa-chevron-down"></i></summary>
+                                <ul>
+                                  <li><a href="#">Features</a></li>
+                                  <li><a href="#">Integrations</a></li>
+                                  <li><a href="#">Enterprise</a></li>
+                                  <li><a href="#">Solutions</a></li>
+                                </ul>
+                            </details>
+                        </div>
+                        <div class="col-xl-2 col-lg-2 colmd-2 col-sm-12 col-xs-12">
+                            <details  id="myDetailsthree">
+                                <summary>PRICING  <i class="fas fa-chevron-down"></i></summary>
+                                <ul>
+                                  <li><a href="#">Subscriptions</a></li>
+                                  <li><a href="#">Paid vs free</a></li>
+                                </ul>
+                            </details>
+                        </div>
+                        <div class="col-xl-2 col-lg-2 colmd-2 col-sm-12 col-xs-12">
+                            <details  id="myDetailsfour">
+                                <summary>RESOURCES  <i class="fas fa-chevron-down"></i></summary>
+                                <ul>
+                                  <li><a href="#">Partners</a></li>
+                                  <li><a href="#">Developers</a></li>
+                                  <li><a href="#">Apps</a></li>
+                                  <li><a href="#">Blog</a></li>
+                                  <li><a href="#">Help Centre</a></li>
+                                  <li><a href="#">Events</a></li>
+                                </ul>
+                            </details>
+                        </div>
+                        <div class="col-xl-2 col-lg-2 colmd-2 col-sm-12 col-xs-12">
+                            <details  id="myDetailsfive">
+                                <summary>COMPANY  <i class="fas fa-chevron-down"></i></summary>
+                                <ul>
+                                  <li><a href="#">About us</a></li>
+                                  <li><a href="#">Leadership</a></li>
+                                  <li><a href="#">Investor relations</a></li>
+                                  <li><a href="#">News</a></li>
+                                  <li><a href="#">Media kit</a></li>
+                                  <li><a href="#">Careers</a></li>
+                                </ul>
+                            </details>
+                        </div>
+                    </div>
+                    <hr>
+                    <div class="row social">
+                        <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12 col-xs-12">
+                            <a href="#">Status</a>
+                            <a href="#">Privacy </a>
+                            <a href="#">Terms </a>
+                            <a href="#">Cookies preferences </a>
+                            <a href="#">Contact Us </a>
+                            <a href="#"><i class="fas fa-globe"></i> Change region</a>
+                        </div>
+                        <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12 col-xs-12 right    ">
+                            <a href="#" class="download"><i class="fas fa-cloud-download-alt"></i> Download Slack</a>
+                            <a target="_blank" href="https://twitter.com/slackhq"><i class="fab fa-twitter"></i></a>
+                            <a target="_blank" href="https://facebook.com/slackhq"><i class="fab fa-facebook-square"></i></a>
+                            <a target="_blank" href="https://www.youtube.com/channel/UCY3YECgeBcLCzIrFLP4gblw"><i class="fab fa-youtube"></i></a>
+                            <a target="_blank" href="https://www.linkedin.com/company/tiny-spec-inc/"><i class="fab fa-linkedin"></i></a>
+                        </div>
+                    </div>
+                    <div class="row copy">
+                        <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                            <p>©2021 Slack Technologies, LLC, a Salesforce company. All rights reserved. Various trademarks held by their respective owners.</p>
+                        </div>                       
+                    </div>
+                </div>
+            </div>
+        </footer>
+        <script src='js/jquery.min.js'></script>
+        <script src="js/umd/popper.min.js"></script>
+        <script src="js/bootstrap.min.js"></script>                    
+        <script src='js/slick.min.js'></script>
+        <script src="js/script.min.js"></script>
+        <script src="js/nav.min.js"></script>    
+        
+    </body>
+</html>

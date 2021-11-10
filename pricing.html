@@ -1,0 +1,787 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title>Assignment</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">    
+        <link rel="stylesheet" href="css/bootstrap.min.css">
+        <link rel='stylesheet' href='css/slick.css'>
+        <link rel='stylesheet' href='css/slick-theme.css'>
+        <link rel="stylesheet" href="fonts/css/all.min.css"/>    
+        <link rel="stylesheet" href="css/style.css">
+        <link rel="stylesheet" href="css/nav.css">
+        <link rel="icon" href="img/icon.jpg" type="image/x-icon"/>        
+       
+    </head>
+    <body>
+        <header>
+            <nav>                
+                <div class="logo">
+                    <a href="index.html">
+                        <svg height="25" width="100" class="c-slacklogo--white" viewBox="0 0 240 60" xmlns="http://www.w3.org/2000/svg" shape-rendering="geometricPrecision"><title>Assignment</title><g fill="none"><path d="m75.663 47.477 2.929-6.846c3.207 2.375 7.39 3.632 11.574 3.632 3.068 0 5.02-1.187 5.02-3.003-.07-5.03-18.477-1.118-18.617-13.764-.07-6.427 5.648-11.387 13.737-11.387 4.81 0 9.622 1.188 13.038 3.913l-2.737 6.992c-3.143-2.021-7.025-3.43-10.72-3.43-2.51 0-4.184 1.187-4.184 2.725.07 4.96 18.618 2.235 18.827 14.322 0 6.567-5.579 11.178-13.528 11.178-5.856 0-11.225-1.397-15.34-4.332m116.629-9.325a8.498 8.498 0 0 1 -7.405 4.33c-4.698 0-8.506-3.816-8.506-8.523s3.808-8.523 8.506-8.523a8.498 8.498 0 0 1 7.405 4.33l8.143-4.52c-3.05-5.451-8.868-9.137-15.548-9.137-9.839 0-17.815 7.991-17.815 17.85 0 9.858 7.976 17.85 17.815 17.85 6.68 0 12.498-3.686 15.548-9.137zm-82.477 12.958h10.18v-49.86h-10.179zm95.761-49.86v49.86h10.18v-14.938l12.063 14.938h13.012l-15.34-17.746 14.224-16.559h-12.454l-11.505 13.767v-29.322zm-54.218 15.557v4.053c-1.673-2.795-5.787-4.751-10.11-4.751-8.925 0-15.967 7.895-15.967 17.815s7.042 17.885 15.967 17.885c4.323 0 8.437-1.956 10.11-4.751v4.052h10.18v-34.303zm0 21.414c-1.464 2.445-4.532 4.26-7.948 4.26-4.699 0-8.507-3.815-8.507-8.522s3.808-8.523 8.507-8.523c3.416 0 6.484 1.886 7.948 4.4z" fill="#ffffff"></path><path d="m21.902.148c-3.299 0-5.973 2.68-5.973 5.985a5.979 5.979 0 0 0 5.973 5.985h5.974v-5.985a5.98 5.98 0 0 0 -5.974-5.985m0 15.96h-15.929c-3.299 0-5.973 2.68-5.973 5.986 0 3.305 2.674 5.985 5.973 5.985h15.93c3.298 0 5.973-2.68 5.973-5.985 0-3.306-2.675-5.986-5.974-5.986" fill="#36c5f0"></path><path d="m59.734 22.094c0-3.306-2.675-5.986-5.974-5.986s-5.973 2.68-5.973 5.986v5.985h5.973a5.98 5.98 0 0 0 5.974-5.985m-15.929 0v-15.961a5.98 5.98 0 0 0 -5.974-5.985c-3.299 0-5.973 2.68-5.973 5.985v15.96c0 3.307 2.674 5.987 5.973 5.987a5.98 5.98 0 0 0 5.974-5.985" fill="#2eb67d"></path><path d="m37.831 60a5.98 5.98 0 0 0 5.974-5.985 5.98 5.98 0 0 0 -5.974-5.985h-5.973v5.985c0 3.305 2.674 5.985 5.973 5.985m0-15.96h15.93c3.298 0 5.973-2.68 5.973-5.986a5.98 5.98 0 0 0 -5.974-5.985h-15.929c-3.299 0-5.973 2.68-5.973 5.985a5.979 5.979 0 0 0 5.973 5.985" fill="#ecb22e"></path><path d="m0 38.054a5.979 5.979 0 0 0 5.973 5.985 5.98 5.98 0 0 0 5.974-5.985v-5.985h-5.974c-3.299 0-5.973 2.68-5.973 5.985m15.929 0v15.96c0 3.306 2.674 5.986 5.973 5.986a5.98 5.98 0 0 0 5.974-5.985v-15.961a5.979 5.979 0 0 0 -5.974-5.985c-3.299 0-5.973 2.68-5.973 5.985" fill="#e01e5a"></path></g></svg>
+                        <svg width="100" class="c-slacklogo--color" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 240 60" shape-rendering="geometricPrecision"><title>Assignment</title><path d="m75.663 47.477 2.929-6.846c3.207 2.375 7.39 3.632 11.574 3.632 3.068 0 5.02-1.187 5.02-3.003-.07-5.03-18.477-1.118-18.617-13.764-.07-6.427 5.648-11.387 13.737-11.387 4.81 0 9.622 1.188 13.038 3.913l-2.737 6.992c-3.143-2.021-7.025-3.43-10.72-3.43-2.51 0-4.184 1.187-4.184 2.725.07 4.96 18.618 2.235 18.827 14.322 0 6.567-5.579 11.178-13.528 11.178-5.856 0-11.225-1.397-15.34-4.332m116.629-9.325a8.498 8.498 0 0 1 -7.405 4.33c-4.698 0-8.506-3.816-8.506-8.523s3.808-8.523 8.506-8.523a8.498 8.498 0 0 1 7.405 4.33l8.143-4.52c-3.05-5.451-8.868-9.137-15.548-9.137-9.839 0-17.815 7.991-17.815 17.85 0 9.858 7.976 17.85 17.815 17.85 6.68 0 12.498-3.686 15.548-9.137zm-82.477 12.958h10.18v-49.86h-10.179zm95.761-49.86v49.86h10.18v-14.938l12.063 14.938h13.012l-15.34-17.746 14.224-16.559h-12.454l-11.505 13.767v-29.322zm-54.218 15.557v4.053c-1.673-2.795-5.787-4.751-10.11-4.751-8.925 0-15.967 7.895-15.967 17.815s7.042 17.885 15.967 17.885c4.323 0 8.437-1.956 10.11-4.751v4.052h10.18v-34.303zm0 21.414c-1.464 2.445-4.532 4.26-7.948 4.26-4.699 0-8.507-3.815-8.507-8.522s3.808-8.523 8.507-8.523c3.416 0 6.484 1.886 7.948 4.4z"></path><path d="m21.902.148c-3.299 0-5.973 2.68-5.973 5.985a5.979 5.979 0 0 0 5.973 5.985h5.974v-5.985a5.98 5.98 0 0 0 -5.974-5.985m0 15.96h-15.929c-3.299 0-5.973 2.68-5.973 5.986 0 3.305 2.674 5.985 5.973 5.985h15.93c3.298 0 5.973-2.68 5.973-5.985 0-3.306-2.675-5.986-5.974-5.986" fill="#36C5F0"></path><path d="m59.734 22.094c0-3.306-2.675-5.986-5.974-5.986s-5.973 2.68-5.973 5.986v5.985h5.973a5.98 5.98 0 0 0 5.974-5.985m-15.929 0v-15.961a5.98 5.98 0 0 0 -5.974-5.985c-3.299 0-5.973 2.68-5.973 5.985v15.96c0 3.307 2.674 5.987 5.973 5.987a5.98 5.98 0 0 0 5.974-5.985" fill="#2EB67D"></path><path d="m37.831 60a5.98 5.98 0 0 0 5.974-5.985 5.98 5.98 0 0 0 -5.974-5.985h-5.973v5.985c0 3.305 2.674 5.985 5.973 5.985m0-15.96h15.93c3.298 0 5.973-2.68 5.973-5.986a5.98 5.98 0 0 0 -5.974-5.985h-15.929c-3.299 0-5.973 2.68-5.973 5.985a5.979 5.979 0 0 0 5.973 5.985" fill="#ECB22E"></path><g><path d="m0 38.054a5.979 5.979 0 0 0 5.973 5.985 5.98 5.98 0 0 0 5.974-5.985v-5.985h-5.974c-3.299 0-5.973 2.68-5.973 5.985m15.929 0v15.96c0 3.306 2.674 5.986 5.973 5.986a5.98 5.98 0 0 0 5.974-5.985v-15.961a5.979 5.979 0 0 0 -5.974-5.985c-3.299 0-5.973 2.68-5.973 5.985" fill="#E01E5A"></path></g></svg>
+                    </a>
+                </div>
+                <li id="m-search-btn" class="s-mobile"> <i class="fa fa-search"></i> </li>
+                <div class="menu-icon">
+                    <span class="fas fa-bars"></span>
+                </div>
+                <div class="nav-items left">
+                    <svg width="100" class="c-slacklogo--color mobile" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 240 60" shape-rendering="geometricPrecision"><title>Assignment</title><path d="m75.663 47.477 2.929-6.846c3.207 2.375 7.39 3.632 11.574 3.632 3.068 0 5.02-1.187 5.02-3.003-.07-5.03-18.477-1.118-18.617-13.764-.07-6.427 5.648-11.387 13.737-11.387 4.81 0 9.622 1.188 13.038 3.913l-2.737 6.992c-3.143-2.021-7.025-3.43-10.72-3.43-2.51 0-4.184 1.187-4.184 2.725.07 4.96 18.618 2.235 18.827 14.322 0 6.567-5.579 11.178-13.528 11.178-5.856 0-11.225-1.397-15.34-4.332m116.629-9.325a8.498 8.498 0 0 1 -7.405 4.33c-4.698 0-8.506-3.816-8.506-8.523s3.808-8.523 8.506-8.523a8.498 8.498 0 0 1 7.405 4.33l8.143-4.52c-3.05-5.451-8.868-9.137-15.548-9.137-9.839 0-17.815 7.991-17.815 17.85 0 9.858 7.976 17.85 17.815 17.85 6.68 0 12.498-3.686 15.548-9.137zm-82.477 12.958h10.18v-49.86h-10.179zm95.761-49.86v49.86h10.18v-14.938l12.063 14.938h13.012l-15.34-17.746 14.224-16.559h-12.454l-11.505 13.767v-29.322zm-54.218 15.557v4.053c-1.673-2.795-5.787-4.751-10.11-4.751-8.925 0-15.967 7.895-15.967 17.815s7.042 17.885 15.967 17.885c4.323 0 8.437-1.956 10.11-4.751v4.052h10.18v-34.303zm0 21.414c-1.464 2.445-4.532 4.26-7.948 4.26-4.699 0-8.507-3.815-8.507-8.522s3.808-8.523 8.507-8.523c3.416 0 6.484 1.886 7.948 4.4z"></path><path d="m21.902.148c-3.299 0-5.973 2.68-5.973 5.985a5.979 5.979 0 0 0 5.973 5.985h5.974v-5.985a5.98 5.98 0 0 0 -5.974-5.985m0 15.96h-15.929c-3.299 0-5.973 2.68-5.973 5.986 0 3.305 2.674 5.985 5.973 5.985h15.93c3.298 0 5.973-2.68 5.973-5.985 0-3.306-2.675-5.986-5.974-5.986" fill="#36C5F0"></path><path d="m59.734 22.094c0-3.306-2.675-5.986-5.974-5.986s-5.973 2.68-5.973 5.986v5.985h5.973a5.98 5.98 0 0 0 5.974-5.985m-15.929 0v-15.961a5.98 5.98 0 0 0 -5.974-5.985c-3.299 0-5.973 2.68-5.973 5.985v15.96c0 3.307 2.674 5.987 5.973 5.987a5.98 5.98 0 0 0 5.974-5.985" fill="#2EB67D"></path><path d="m37.831 60a5.98 5.98 0 0 0 5.974-5.985 5.98 5.98 0 0 0 -5.974-5.985h-5.973v5.985c0 3.305 2.674 5.985 5.973 5.985m0-15.96h15.93c3.298 0 5.973-2.68 5.973-5.986a5.98 5.98 0 0 0 -5.974-5.985h-15.929c-3.299 0-5.973 2.68-5.973 5.985a5.979 5.979 0 0 0 5.973 5.985" fill="#ECB22E"></path><g><path d="m0 38.054a5.979 5.979 0 0 0 5.973 5.985 5.98 5.98 0 0 0 5.974-5.985v-5.985h-5.974c-3.299 0-5.973 2.68-5.973 5.985m15.929 0v15.96c0 3.306 2.674 5.986 5.973 5.986a5.98 5.98 0 0 0 5.974-5.985v-15.961a5.979 5.979 0 0 0 -5.974-5.985c-3.299 0-5.973 2.68-5.973 5.985" fill="#E01E5A"></path></g></svg>
+                    <ul class="nav navbar-nav desk">               
+                        <li class="dropdown">
+                          <a href="#" class="dropdown-toggle" data-toggle="dropdown">Product </a><i class="fas fa-chevron-down"></i>
+                          <ul class="dropdown-menu">
+                            <li><a href="#">Features</a></li>
+                            <li><a href="#">Channels</a></li>
+                            <li><a href="#">Your Digital HQ</a></li>
+                            <li><a href="#">Integrations</a></li>
+                            <li><a href="#">Security</a></li>
+                            <li><a href="#">Slack Connect</a></li>
+                            <li><a href="#">Solutions</a></li>
+                            <li><a href="#">Customers</a></li>
+                            <hr>
+                            <li><a href="#"><i class="fas fa-cloud-download-alt"></i> Download Slack</a></li>
+                          </ul>
+                        </li>
+                    </ul>
+                    <div class="dropdown mobile">
+                        <a class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        Product
+                        </a><i class="fas fa-chevron-down"></i>
+                        <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                        <a class="dropdown-item" href="#">Features</a>
+                        <a class="dropdown-item" href="#">Channels</a>
+                        <a class="dropdown-item" href="#">Your Digital HQ</a>
+                        <a class="dropdown-item" href="#">Integrations</a>
+                        <a class="dropdown-item" href="#">Security</a>
+                        <a class="dropdown-item" href="#">Slack Connect</a>
+                        <a class="dropdown-item" href="#">Solutions</a>
+                        <a class="dropdown-item" href="#">Customers</a>
+                        </div>
+                    </div>  
+                    <li><a href="enterprise.html">Enterprise</a></li>
+                    <li><a href="resources.html">Resources</a></li>
+                    <li><a href="pricing.html">Pricing</a></li>    
+                    <li id="search-btn" class="s-desk"><span class="search-icon"> <i class="fa fa-search"></i> </span></li>  
+                    <li><a href="#">Sign in</a></li> 
+                    <li class="talk"><a href="#" class="talk">TALK TO SALES</a></li>
+                    <li class="try"><a href="#"  class="try">TRY FOR FREE</a></li>
+                    <li class="download">
+                        <ul>
+                            <li class="talk signin"><a href="#" class="talk">SIGN IN </a></li>
+                            <li class="try download"><a href="#"  class="try">DOWNLOAD SLACK</a></li>
+                        </ul>
+                    </li>
+                        
+                </div>                                        
+                <div class="cancel-icon">
+                    <span class="fas fa-times"></span>
+                </div>
+                <div id="search-wrap" class="wrap-top search-wrap">
+                    <div class="width">
+                        <ul class="clearfix">                            
+                            <li class="searchleft">
+                                <svg width="150" class="c-slacklogo--color search" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 240 60" shape-rendering="geometricPrecision"><title>Slack</title><path d="m75.663 47.477 2.929-6.846c3.207 2.375 7.39 3.632 11.574 3.632 3.068 0 5.02-1.187 5.02-3.003-.07-5.03-18.477-1.118-18.617-13.764-.07-6.427 5.648-11.387 13.737-11.387 4.81 0 9.622 1.188 13.038 3.913l-2.737 6.992c-3.143-2.021-7.025-3.43-10.72-3.43-2.51 0-4.184 1.187-4.184 2.725.07 4.96 18.618 2.235 18.827 14.322 0 6.567-5.579 11.178-13.528 11.178-5.856 0-11.225-1.397-15.34-4.332m116.629-9.325a8.498 8.498 0 0 1 -7.405 4.33c-4.698 0-8.506-3.816-8.506-8.523s3.808-8.523 8.506-8.523a8.498 8.498 0 0 1 7.405 4.33l8.143-4.52c-3.05-5.451-8.868-9.137-15.548-9.137-9.839 0-17.815 7.991-17.815 17.85 0 9.858 7.976 17.85 17.815 17.85 6.68 0 12.498-3.686 15.548-9.137zm-82.477 12.958h10.18v-49.86h-10.179zm95.761-49.86v49.86h10.18v-14.938l12.063 14.938h13.012l-15.34-17.746 14.224-16.559h-12.454l-11.505 13.767v-29.322zm-54.218 15.557v4.053c-1.673-2.795-5.787-4.751-10.11-4.751-8.925 0-15.967 7.895-15.967 17.815s7.042 17.885 15.967 17.885c4.323 0 8.437-1.956 10.11-4.751v4.052h10.18v-34.303zm0 21.414c-1.464 2.445-4.532 4.26-7.948 4.26-4.699 0-8.507-3.815-8.507-8.522s3.808-8.523 8.507-8.523c3.416 0 6.484 1.886 7.948 4.4z"></path><path d="m21.902.148c-3.299 0-5.973 2.68-5.973 5.985a5.979 5.979 0 0 0 5.973 5.985h5.974v-5.985a5.98 5.98 0 0 0 -5.974-5.985m0 15.96h-15.929c-3.299 0-5.973 2.68-5.973 5.986 0 3.305 2.674 5.985 5.973 5.985h15.93c3.298 0 5.973-2.68 5.973-5.985 0-3.306-2.675-5.986-5.974-5.986" fill="#36C5F0"></path><path d="m59.734 22.094c0-3.306-2.675-5.986-5.974-5.986s-5.973 2.68-5.973 5.986v5.985h5.973a5.98 5.98 0 0 0 5.974-5.985m-15.929 0v-15.961a5.98 5.98 0 0 0 -5.974-5.985c-3.299 0-5.973 2.68-5.973 5.985v15.96c0 3.307 2.674 5.987 5.973 5.987a5.98 5.98 0 0 0 5.974-5.985" fill="#2EB67D"></path><path d="m37.831 60a5.98 5.98 0 0 0 5.974-5.985 5.98 5.98 0 0 0 -5.974-5.985h-5.973v5.985c0 3.305 2.674 5.985 5.973 5.985m0-15.96h15.93c3.298 0 5.973-2.68 5.973-5.986a5.98 5.98 0 0 0 -5.974-5.985h-15.929c-3.299 0-5.973 2.68-5.973 5.985a5.979 5.979 0 0 0 5.973 5.985" fill="#ECB22E"></path><g><path d="m0 38.054a5.979 5.979 0 0 0 5.973 5.985 5.98 5.98 0 0 0 5.974-5.985v-5.985h-5.974c-3.299 0-5.973 2.68-5.973 5.985m15.929 0v15.96c0 3.306 2.674 5.986 5.973 5.986a5.98 5.98 0 0 0 5.974-5.985v-15.961a5.979 5.979 0 0 0 -5.974-5.985c-3.299 0-5.973 2.68-5.973 5.985" fill="#E01E5A"></path></g></svg>
+                                <i class="fa fa-search"></i> 
+                                <input type='search' placeholder="Find anything (ie. channels, emoji, or reset password)"  list=text_editors>                                
+                                <datalist id="text_editors">
+                                    <select multiple size=8>
+                                    <option value="What is Slack Frontiers and why should I attend?">What is Slack Frontiers and why should I attend?
+                                    <option value="What is Slack Connect?">What is Slack Connect?		
+                                    <option value="Working with external organizations in Slack">Working with external organizations in Slack                                    
+                                    <option value="What is Slack Frontiers and why should I?">What is Slack Frontiers and why should I
+                                    <option value="What is Connect?">What is Connect?		
+                                    <option value="Working with external organizations in Slack">Working with external organizations in Slack                                    
+                                    </select>
+                                </datalist>
+                            </li>                    
+                            <li id="li-4"> <i class="fa fa-times"></i> </li>
+                            <li id="li-3"><a class="search-btn">Search</a></li>
+                        </ul>
+                    </div>
+                </div>          
+            </nav>
+        </header>
+        <main class="enterprisepage pricingpage">
+            <section class="secone">
+                <div class="container-fluid">
+                    <h1>Make teamwork more productive</h1>
+                    <div class="row">
+                        <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                            <div class="secone__head">
+                                <p><img src="img/pricing/emoji_flag_in.png" alt="img" width="24" height="24"> Special offer for teams in India</p>
+                            </div>
+                        </div>
+                        <div class="col-xl-3 col-lg-3 col-md-6 col-sm-6 col-xs-12">
+                            <div class="secone__box">
+                                <div class="secone__boxhead">
+                                    <h6>Free</h6>
+                                    <p>The quickest and easiest way to try Slack                            </p>
+                                    <h4>$US0<span>/mth</span>                            </h4>
+                                </div>
+                                <a href="#" class="newbtn btn-pinkbtnfill">GET STARTED</a>
+                                <br><br><br>
+                                <ul>
+                                    <li><i class="fas fa-check"></i> Access to 10,000 of your team’s most recent messages</li>
+                                    <li><i class="fas fa-check"></i> 10 integrations with other apps like Google Drive, Office 365 and many more</li>
+                                    <li><i class="fas fa-check"></i> 1:1 voice and video calls between teammates</li>
+                                    
+                                </ul>
+                                <a href="#" class="learn">Learn more</a>
+                            </div>
+                        </div>
+                        <div class="col-xl-3 col-lg-3 col-md-6 col-sm-6 col-xs-12">
+                            <div class="secone__box">
+                                <div class="secone__boxhead">
+                                    <h6>Pro</h6>
+                                    <p>More power for small teams who want better collaboration</p>
+                                    <h4><del>$US6.67</del>$US2.67 <span class="under">/mth*</span></h4>
+                                </div>
+                                
+                                <a href="#" class="newbtn btn-pinkbtnfill">GET STARTED</a>
+                                <p><b>All the benefits of Free and:</b></p>
+                                <ul>
+                                    <li><i class="fas fa-check"></i> The full context of your organisation’s message history at your fingertips</li>
+                                    <li><i class="fas fa-check"></i>Timely info and actions in one place with unlimited integrations</li>
+                                    <li><i class="fas fa-check"></i> Face-to-face communication with group voice and video calls of up to 15 teammates</li>
+                                    <li><i class="fas fa-check"></i> Secure collaboration with outside organisations or guests from within Slack</li>
+                                    
+                                </ul>
+                                <a href="#" class="learn">Learn more</a>
+                            </div>
+                        </div>
+                        <div class="col-xl-3 col-lg-3 col-md-6 col-sm-6 col-xs-12">
+                            <div class="secone__box">
+                                <div class="secone__boxhead">
+                                    <h6>Business+</h6>
+                                    <p>Scale your business, increase productivity and keep your teams connected</p>
+                                    <h4><del>$US12.50</del>$US5<span>/mth*</span></h4>
+                                </div>                                
+                                <a href="#" class="newbtn btn-pinkbtnfill">GET STARTED</a>
+                                <p><b>All the goodness of Pro, and: </b></p>
+                                <ul>
+                                    <li><i class="fas fa-check"></i> Advanced identity management through SAML-based SSO and real-time Active Directory sync with OneLogin, Okta and Ping Identity</li>
+                                    <li><i class="fas fa-check"></i> Compliance requirements met with data exports for all messages</li>
+                                    <li><i class="fas fa-check"></i> Around-the-clock teamwork and assistance with 99.99% guaranteed uptime and 24/7 support with a four-hour response time</li>                                
+                                </ul>
+                                <a href="#" class="learn">Learn more</a>
+                            </div>
+                        </div>
+                        <div class="col-xl-3 col-lg-3 col-md-6 col-sm-6 col-xs-12">
+                            <div class="secone__box">
+                                <div class="secone__boxhead">
+                                    <h6>Enterprise Grid</h6>
+                                    <p>Slack for the most demanding enterprises – all the flexibility to meet your regulatory requirements and all the power to match your growth</p>
+                                </div>
+                                <a href="" class="newbtn btn-pinkbtnfill">CONTACT SALES</a>
+                                <p><b>All the greatness of Business+, and:</b></p>
+                                <ul>
+                                    <li><i class="fas fa-check"></i> Peace of mind with enterprise-grade security and compliance, such as HIPAA support and the Enterprise Key Management add-on</li>
+                                    <li><i class="fas fa-check"></i> Large scale collaboration and alignment with support for up to 500,000 users</li>
+                                    <li><i class="fas fa-check"></i> Streamlined administration with centralised controls and customisable policies</li>
+                                    <li><i class="fas fa-check"></i> Tailored support with a designated account and customer success team</li>                                
+                                </ul>
+                                <a href="#" class="learn">Learn more</a>
+                            </div>
+                        </div> 
+                    </div>
+                </div>                
+            </section>
+
+            <section class="sectwo">
+                <div class="container-fluid">
+                    <div class="table-responsive">
+                        <table class="table table-hover">
+                            <thead>
+                              <tr>
+                                <th scope="col"></th>
+                                <th scope="col">Free</th>
+                                <th scope="col">Pro</th>
+                                <th scope="col">Business+</th>
+                                <th scope="col">Enterprise Grid</th>
+                              </tr>
+                            </thead>
+                            <tbody>
+                              <tr>
+                                <th scope="row"><b>PRODUCTIVITY BASICS</b></th>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                              </tr>
+                              <tr>
+                                <th scope="row"><u>Message history</u>                            </th>
+                                <td>	10k of your team’s most recent messages</td>
+                                <td>Unlimited</td>
+                                <td>Unlimited</td>
+                                <td>Unlimited</td>                            
+                              </tr>
+                              <tr>
+                                <th scope="row">Relevant people, channels and files in search results		</th>
+                                <td><i class="fas fa-check"></i></td>
+                                <td><i class="fas fa-check"></i></td>
+                                <td><i class="fas fa-check"></i></td>
+                                <td><i class="fas fa-check"></i></td>
+                              </tr>
+                              <tr>
+                                <th scope="row"><u>Integrations with other apps</u></th>
+                                <td>10</td>
+                                <td>Unlimited</td>
+                                <td>Unlimited</td>
+                                <td>Unlimited</td>                            
+                              </tr>
+                              <tr>
+                                <th scope="row">File storage</th>
+                                <td>5 GB in total</td>
+                                <td>10 GB per team member</td>
+                                <td>20 GB per team member</td>
+                                <td>1 TB per team member</td>
+                              </tr>
+                              <tr>
+                                <th scope="row"><u>Workspaces</u>
+                                </th>
+                                <td>1	</td>
+                                <td>1	</td>
+                                <td>1	</td>
+                                <td>Unlimited</td>
+                              </tr>
+                              <tr>
+                                <th scope="row"><u>Customisable sections</u></th>
+                                <td></td>
+                                <td><i class="fas fa-check"></i></td>
+                                <td><i class="fas fa-check"></i></td>
+                                <td><i class="fas fa-check"></i></td>
+                              </tr>
+                              <tr>
+                                <th scope="row"><u>Slack huddles</u></th>
+                                <td></td>
+                                <td><i class="fas fa-check"></i></td>
+                                <td><i class="fas fa-check"></i></td>
+                                <td><i class="fas fa-check"></i></td>
+                              </tr>
+                              <tr>
+                                <th scope="row"><u>Audio and video clips</u></th>
+                                <td></td>
+                                <td><i class="fas fa-check"></i></td>
+                                <td><i class="fas fa-check"></i></td>
+                                <td><i class="fas fa-check"></i></td>
+                              </tr>
+                              <tr>
+                                <th scope="row"><b>EXTERNAL COLLABORATION</b></th>
+                                <td></td>                            
+                                <td></td>                            
+                                <td></td>                            
+                                <td></td>                            
+                              </tr>
+                              <tr>
+                                <th scope="row"><u>Work with other organisations</u></th>
+                                <td></td>
+                                <td><i class="fas fa-check"></i></td>
+                                <td><i class="fas fa-check"></i></td>
+                                <td><i class="fas fa-check"></i></td>
+                              </tr>
+                              <tr>
+                                <th scope="row"><u>Work with individuals</u></th>
+                                <td></td>
+                                <td><i class="fas fa-check"></i></td>
+                                <td><i class="fas fa-check"></i></td>
+                                <td><i class="fas fa-check"></i></td>
+                              </tr>
+                              <tr>
+                                <th scope="row">Work with individuals</th>
+                                <td></td>
+                                <td><i class="fas fa-check"></i></td>
+                                <td><i class="fas fa-check"></i></td>
+                                <td><i class="fas fa-check"></i></td>
+                              </tr>
+                              <tr>
+                                <th scope="row"><b>SECURITY</b></th>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                              </tr>
+                              <tr>
+                                <th scope="row">Data encryption at rest and in transit</th>
+                                <td><i class="fas fa-check"></i></td>
+                                <td><i class="fas fa-check"></i></td>
+                                <td><i class="fas fa-check"></i></td>
+                                <td><i class="fas fa-check"></i></td>
+                              </tr>
+                              <tr>
+                                <th scope="row">Two-factor authentication</th>
+                                <td><i class="fas fa-check"></i></td>
+                                <td><i class="fas fa-check"></i></td>
+                                <td><i class="fas fa-check"></i></td>
+                                <td><i class="fas fa-check"></i></td>
+                              </tr>
+                              <tr>
+                                <th scope="row">OAuth with Google</th>
+                                <td></td>
+                                <td><i class="fas fa-check"></i></td>
+                                <td><i class="fas fa-check"></i></td>                            
+                                <td></td>
+                              </tr>
+                              <tr>
+                                <th scope="row">SAML-based single sign-on (SSO)</th>
+                                <td></td>
+                                <td></td>
+                                <td><i class="fas fa-check"></i></td>
+                                <td><i class="fas fa-check"></i></td>
+                              </tr>
+                              <tr>
+                                <th scope="row">Slack Enterprise Key Management</th>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td>Add-on</td>
+                              </tr>
+                              <tr>
+                                <th scope="row">Integration with enterprise mobility management (EMM)</th>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td><i class="fas fa-check"></i></td>
+                              </tr>
+                              <tr>
+                                <th scope="row"><b>COMPLIANCE</b></th>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                              </tr>
+                              <tr>
+                                <th scope="row">Custom retention policies for messages and files</th>
+                                <td></td>
+                                <td><i class="fas fa-check"></i></td>
+                                <td><i class="fas fa-check"></i></td>
+                                <td><i class="fas fa-check"></i></td>
+                              </tr>
+                              <tr>
+                                <th scope="row">Data exports for all messages</th>
+                                <td></td>
+                                <td></td>
+                                <td><i class="fas fa-check"></i></td>
+                                <td><i class="fas fa-check"></i></td>
+                              </tr>
+                              <tr>
+                                <th scope="row">Support for HIPAA compliance</th>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td><i class="fas fa-check"></i></td>
+                              </tr>
+                              <tr>
+                                <th scope="row">Data residency</th>
+                                <td></td>
+                                <td></td>
+                                <td><i class="fas fa-check"></i></td>
+                                <td><i class="fas fa-check"></i></td>
+                              </tr>
+                              <tr>
+                                <th scope="row"><b>ADMINISTRATION</b></th>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                              </tr>
+                              <tr>
+                                <th scope="row">Manage channel posting permissions</th>
+                                <td><u>Limited to #general channel only</u>
+                                </td>
+                                <td><u>Limited to #general channel only</u>
+                                </td>
+                                <td>Unlimited number of channels</td>
+                                <td>Unlimited number of channels</td>
+                              </tr>
+                              <tr>
+                                <th scope="row">Custom user groups</th>
+                                <td></td>
+                                <td><i class="fas fa-check"></i></td>
+                                <td><i class="fas fa-check"></i></td>
+                                <td><i class="fas fa-check"></i></td>
+                              </tr>
+                              <tr>
+                                <th scope="row">Real-time Active Directory sync with OneLogin, Okta and Ping Identity</th>
+                                <td></td>
+                                <td></td>
+                                <td><i class="fas fa-check"></i></td>
+                                <td><i class="fas fa-check"></i></td>
+                              </tr>
+                              <tr>
+                                <th scope="row">User management with SCIM provisioning</th>
+                                <td></td>
+                                <td></td>
+                                <td><i class="fas fa-check"></i></td>
+                                <td><i class="fas fa-check"></i></td>
+                              </tr>
+                              <tr>
+                                <th scope="row">Support for integrations with data loss prevention (DLP), e-discovery and offline backup providers</th>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td><i class="fas fa-check"></i></td>
+                              </tr>
+                              <tr>
+                                <th scope="row">Domain claiming</th>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td><i class="fas fa-check"></i></td>
+                              </tr>
+                              <tr>
+                                <th scope="row">Custom terms of service</th>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td><i class="fas fa-check"></i></td>
+                              </tr>
+                              <tr>
+                                <th scope="row"><b>CALLS</b></th>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                              </tr>
+                              <tr>
+                                <th scope="row">Voice and video calls</th>
+                                <td>One-to-one only</td>
+                                <td>Up to 15 participants</td>
+                                <td>Up to 15 participants</td>
+                                <td>Up to 15 participants</td>
+                              </tr>
+                              <tr>
+                                <th scope="row">Screen sharing</th>
+                                <td></td>
+                                <td><i class="fas fa-check"></i></td>
+                                <td><i class="fas fa-check"></i></td>
+                                <td><i class="fas fa-check"></i></td>
+                              </tr>
+                              <tr>
+                                <th scope="row"><b>SUPPORT</b></th>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                              </tr>
+                              <tr>
+                                <th scope="row">Access to customer support</th>
+                                <td>Standard support</td>
+                                <td>24/7 support</td>
+                                <td>24/7 support with four-hour first response time</td>
+                                <td>24/7 priority support with four-hour first response time</td>
+                              </tr>
+                              <tr>
+                                <th scope="row">99.99% guaranteed uptime SLA</th>
+                                <td></td>
+                                <td></td>
+                                <td><i class="fas fa-check"></i></td>
+                                <td><i class="fas fa-check"></i></td>
+                              </tr>
+                              <tr>
+                                <th scope="row">Designated account and customer success team</th>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td><i class="fas fa-check"></i></td>
+                              </tr>
+                              <tr class="last">
+                                <th scope="row"></th>
+                                <td><a href="#">Get started</a></td>
+                                <td><a href="#">Get started</a></td>
+                                <td><a href="#">Get started</a></td> 
+                                <td><a href="#">Contact sales	</a></td> 
+                              </tr>
+                            </tbody>
+                        </table>
+                    </div>                    
+                </div>
+            </section>
+
+            <section class="secthree">
+                <div class="container-fluid">
+                    <h3>Leading the way in enterprise security</h3>
+                    <p>In addition to data encryption in transit and at rest, we operate comprehensive compliance and assurance programmes.</p>
+                    <a href="#" class="link-text">Learn more about security <i class="fas fa-long-arrow-alt-right"></i></a>
+                </div>
+            </section>
+
+            <section class="secnine secfour">
+                <div class="container-fluid">   
+                    <h3>Frequently asked questions</h3>      
+                    <div class="accordion" id="faq">
+                        <div class="card">
+                            <div class="card-header" id="faqhead1">
+                                <a href="#" class="btn-header-link collapsed" data-toggle="collapse" data-target="#faq1"
+                                aria-expanded="true" aria-controls="faq1">What are my payment options – credit card and/or invoicing?</a>
+                            </div>
+    
+                            <div id="faq1" class="collapse" aria-labelledby="faqhead1" data-parent="#faq">
+                                <div class="card-body">
+                                    <p>You can use your credit card to pay for any subscription. If you sign up for an annual subscription and plan to spend at least $US5,000, we can invoice you annually. Visit the <a href="#">Help Centre</a> for more information or <a href="#">Contact us</a> to start the process.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card">
+                            <div class="card-header" id="faqhead2">
+                                <a href="#" class="btn-header-link collapsed" data-toggle="collapse" data-target="#faq2"
+                                aria-expanded="true" aria-controls="faq2">Our team has several accounts that are not being used actively but we don’t want to disable. Do we still have to pay for them?</a>
+                            </div>
+    
+                            <div id="faq2" class="collapse" aria-labelledby="faqhead2" data-parent="#faq">
+                                <div class="card-body">
+                                   <p>Every day we check to see if everyone on your team is active. If they have been inactive for a period of time, we stop charging you for that person and add pro-rata credit to your account for the time you’ve already paid. You’ll always and only be charged for what you use – fair and square!</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card">
+                            <div class="card-header" id="faqhead3">
+                                <a href="#" class="btn-header-link collapsed" data-toggle="collapse" data-target="#faq3"
+                                aria-expanded="true" aria-controls="faq3">My team have credit. How do we use it?</a>
+                            </div>
+    
+                            <div id="faq3" class="collapse" aria-labelledby="faqhead3" data-parent="#faq">
+                                <div class="card-body">
+                                   <p>Once your team take out a subscription, we’ll redeem your credit balance until it runs out. We won’t start charging your subscription to your credit card until then. As long as you sign up for a subscription before the expiry date, that credit is yours to use until it’s all gone.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card">
+                            <div class="card-header" id="faqhead4">
+                                <a href="#" class="btn-header-link collapsed" data-toggle="collapse" data-target="#faq4"
+                                aria-expanded="true" aria-controls="faq4">We need to add new users to our team. How will we be charged for that?</a>
+                            </div>
+    
+                            <div id="faq4" class="collapse" aria-labelledby="faqhead4" data-parent="#faq">
+                                <div class="card-body">
+                                   <p>We’ll apply a one-off, pro-rata charge to your credit card to cover your new team member’s account for the remainder of the current billing period.</p>
+                                   <p>As an example, suppose your team is on the ‘Pro subscription’, which costs $US8 per active user per month when billed monthly. You add a new team member ten days into your billing period, and there are 20 remaining days in the month. The per-day cost for each user is $US8 / 30, so we will make a one-time charge of $US5.33 ($US8 / 30 days * 20 days) to your team’s credit card on file.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card">
+                            <div class="card-header" id="faqhead5">
+                                <a href="#" class="btn-header-link collapsed" data-toggle="collapse" data-target="#faq5"
+                                aria-expanded="true" aria-controls="faq5">My team want to cancel their subscription. How can we do that? Can we get a refund?</a>
+                            </div>
+    
+                            <div id="faq5" class="collapse" aria-labelledby="faqhead5" data-parent="#faq">
+                                <div class="card-body">
+                                   <p>Team owners can change the team’s subscription level. There are two options when downgrading from a paid subscription to the Free subscription:</p>
+                                   <ul>
+                                       <li>You can downgrade to the Free subscription immediately. If there is more than one day until your renewal date, we will adjust the remaining balance on your account pro-rata and hold it for your team as a credit. You can use that credit towards any reactivation of your paid subscription in the future.</li>
+                                       <li>We can automatically downgrade you to the Free subscription at your next renewal date. Your subscription will remain active at its current level until the end of the billing period that you’ve already paid for.</li>
+                                   </ul>
+                                   <p>We do not offer refunds.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card">
+                            <div class="card-header" id="faqhead6">
+                                <a href="#" class="btn-header-link collapsed" data-toggle="collapse" data-target="#faq6"
+                                aria-expanded="true" aria-controls="faq6">Do you offer discounts for charities/not-for-profit organisations or educational institutions?</a>
+                            </div>
+    
+                            <div id="faq6" class="collapse" aria-labelledby="faqhead6" data-parent="#faq">
+                                <div class="card-body">
+                                   <p>Slack wants to support people in the world who are doing good things. That’s why we offer special discount pricing for qualifying charities/not-for-profit organisations and educational institutions.</p>
+                                   <a href="#" class="link-text">Slack for Charities <i class="fas fa-long-arrow-alt-right"></i></a>
+                                   <a href="#" class="link-text">Slack for Education <i class="fas fa-long-arrow-alt-right"></i></a>
+                                </div>
+                            </div>
+                        </div>                        
+                    </div>
+                    <p class="last">
+                        Get more information on <a href="#"> billing at Slack </a>
+                    </p>
+                </div>
+            </section>
+
+            <section class="secfive seceight">
+                <h3 class="d-block w-100">You’re in good company</h3>
+                <p>Teams of every size, shape and sort have already made Slack the place where their work happens.</p>
+                <div class="container-fluid">                    
+                    
+                    <div class="link"><a href="#" class="link-text">View all customer stories <i class="fas fa-long-arrow-alt-right"></i></a></div>
+                    <div class="slidereight secfive__slider">
+                        <div class="secfive__slides seceight__slides">
+                            <div class="secfive__box">
+                                <div class="secfive__boxhead">
+                                    <img src="img/pricing/intuit-slack-customer-hero.jpg" alt="image" width="267" height="267">
+                                </div>
+                                <div class="secfive__boxbody">
+                                    <img src="img/pricing/Logo.png" alt="img" width="111" height="32">
+                                    <h4><a href="#"> Connecting teams to support 50 million customers around the world</a></h4>
+                                    <div class="link"><i class="fas fa-long-arrow-alt-right"></i></div>
+                                </div>
+                            </div>
+                        </div>
+                                             
+                        <div class="secfive__slides seceight__slides">
+                            <div class="secfive__box">
+                                <div class="secfive__boxhead">
+                                    <img src="img/pricing/Slack-Customer-Survery-Monkey-hero.jpg" alt="image" width="267" height="267">
+                                </div>
+                                <div class="secfive__boxbody">
+                                    <img src="img/pricing/Surveymonkey-color.png" alt="img" width="124" height="18">
+                                    <h4><a href="#"> Scaling feedback from the inside out</a></h4>
+                                    <div class="link"><i class="fas fa-long-arrow-alt-right"></i></div>
+                                </div>
+                            </div>
+                        </div>
+                                             
+                        <div class="secfive__slides seceight__slides">
+                            <div class="secfive__box">
+                                <div class="secfive__boxhead">
+                                    <img src="img/pricing/Slack-Customer-Story-BBC.jpg" alt="image" width="267" height="267">
+                                </div>
+                                <div class="secfive__boxbody">
+                                    <img src="img/pricing/BBC-logo.png" alt="img" width="112" height="32">
+                                    <h4><a href="#"> Improving collaboration with Slack</a></h4>
+                                    <div class="link"> <i class="fas fa-long-arrow-alt-right"></i></div>
+                                </div>
+                            </div>
+                        </div>
+                                             
+                        <div class="secfive__slides seceight__slides">
+                            <div class="secfive__box">
+                                <div class="secfive__boxhead">
+                                    <img src="img/pricing/Autodesk-Slack-Customer.jpg" alt="image" width="267" height="267">
+                                </div>
+                                <div class="secfive__boxbody">
+                                    <img src="img/pricing/Autodesk-Color.png" alt="img" width="124" height="22">
+                                    <h4><a href="#"> Unifying product experience and company culture at Autodesk</a></h4>
+                                    <div class="link"><i class="fas fa-long-arrow-alt-right"></i></div>
+                                </div>
+                            </div>
+                        </div>
+                                             
+                    </div>
+                </div>            
+            </section>
+
+            <section class="sectwo secsix">
+                <div class="container-fluid">
+                    <div class="sectwo__slider pricingsliderlast">                                                
+                        <div class="sectwo__slides"><img class="img img-responsive" src="img/pricing/trivago-logo.png" alt="image" width="112" height="35">   </div>
+                        <div class="sectwo__slides"><img class="img img-responsive" src="img/pricing/vodafone-logo.png" alt="image" width="132" height="35">           </div>
+                        <div class="sectwo__slides"><img class="img img-responsive" src="img/pricing/shopify-logo.png" alt="image" width="123" height="35">   </div>
+                        <div class="sectwo__slides"><img class="img img-responsive" src="img/pricing/treebo-logo.png" alt="image" width="145" height="35">     </div>                        
+                    </div>
+                </div>            
+            </section>
+          
+         
+
+        </main>
+        <footer class="secfooter">
+            <div class="secfootertop">
+               <div class="container-fluid">
+                    <h2>Whatever work you do, you can do it in Slack</h2>
+                    <div class="secfootertop__btn">
+                        <a href="#" class="newbtn btn-pinkbtnborder mt-2">GET STARTED</a>
+                        <a href="#" class="newbtn btn-pinkbtnfill mt-2">TALK TO SALES</a>
+                    </div>
+               </div>
+            </div>
+            <div class="secfooterbottom">
+                <div class="container-fluid">
+                    <div class="row logo">
+                        <div class="col-xl-2 col-lg-2 colmd-2 col-sm-12 col-xs-12">
+                            <img src="img/foot-logo.jpg" alt="image" width="57" height="56">
+                        </div>
+                        <div class="col-xl-2 col-lg-2 colmd-2 col-sm-12 col-xs-12">
+                            <details id="myDetailsone">
+                                <summary>WHY SLACK? <i class="fas fa-chevron-down"></i></summary>
+                                <ul>
+                                  <li><a href="#">Slack vs email</a></li>
+                                  <li><a href="#">Channels</a></li>
+                                  <li><a href="#">Engagement</a></li>
+                                  <li><a href="#">Scale</a></li>
+                                  <li><a href="#">Watch the demo</a></li>
+                                </ul>
+                            </details>
+                        </div>
+                        <div class="col-xl-2 col-lg-2 colmd-2 col-sm-12 col-xs-12">
+                            <details  id="myDetailstwo">
+                                <summary>PRODUCT  <i class="fas fa-chevron-down"></i></summary>
+                                <ul>
+                                  <li><a href="#">Features</a></li>
+                                  <li><a href="#">Integrations</a></li>
+                                  <li><a href="#">Enterprise</a></li>
+                                  <li><a href="#">Solutions</a></li>
+                                </ul>
+                            </details>
+                        </div>
+                        <div class="col-xl-2 col-lg-2 colmd-2 col-sm-12 col-xs-12">
+                            <details  id="myDetailsthree">
+                                <summary>PRICING  <i class="fas fa-chevron-down"></i></summary>
+                                <ul>
+                                  <li><a href="#">Subscriptions</a></li>
+                                  <li><a href="#">Paid vs free</a></li>
+                                </ul>
+                            </details>
+                        </div>
+                        <div class="col-xl-2 col-lg-2 colmd-2 col-sm-12 col-xs-12">
+                            <details  id="myDetailsfour">
+                                <summary>RESOURCES  <i class="fas fa-chevron-down"></i></summary>
+                                <ul>
+                                  <li><a href="#">Partners</a></li>
+                                  <li><a href="#">Developers</a></li>
+                                  <li><a href="#">Apps</a></li>
+                                  <li><a href="#">Blog</a></li>
+                                  <li><a href="#">Help Centre</a></li>
+                                  <li><a href="#">Events</a></li>
+                                </ul>
+                            </details>
+                        </div>
+                        <div class="col-xl-2 col-lg-2 colmd-2 col-sm-12 col-xs-12">
+                            <details  id="myDetailsfive">
+                                <summary>COMPANY  <i class="fas fa-chevron-down"></i></summary>
+                                <ul>
+                                  <li><a href="#">About us</a></li>
+                                  <li><a href="#">Leadership</a></li>
+                                  <li><a href="#">Investor relations</a></li>
+                                  <li><a href="#">News</a></li>
+                                  <li><a href="#">Media kit</a></li>
+                                  <li><a href="#">Careers</a></li>
+                                </ul>
+                            </details>
+                        </div>
+                    </div>
+                    <hr>
+                    <div class="row social">
+                        <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12 col-xs-12">
+                            <a href="#">Status</a>
+                            <a href="#">Privacy </a>
+                            <a href="#">Terms </a>
+                            <a href="#">Cookies preferences </a>
+                            <a href="#">Contact Us </a>
+                            <a href="#"><i class="fas fa-globe"></i> Change region</a>
+                        </div>
+                        <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12 col-xs-12 right    ">
+                            <a href="#" class="download"><i class="fas fa-cloud-download-alt"></i> Download Slack</a>
+                            <a target="_blank" href="https://twitter.com/slackhq"><i class="fab fa-twitter"></i></a>
+                            <a target="_blank" href="https://facebook.com/slackhq"><i class="fab fa-facebook-square"></i></a>
+                            <a target="_blank" href="https://www.youtube.com/channel/UCY3YECgeBcLCzIrFLP4gblw"><i class="fab fa-youtube"></i></a>
+                            <a target="_blank" href="https://www.linkedin.com/company/tiny-spec-inc/"><i class="fab fa-linkedin"></i></a>
+                        </div>
+                    </div>
+                    <div class="row copy">
+                        <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                            <p>©2021 Slack Technologies, LLC, a Salesforce company. All rights reserved. Various trademarks held by their respective owners.</p>
+                        </div>                       
+                    </div>
+                </div>
+            </div>
+        </footer>
+        <script src='js/jquery.min.js'></script>
+        <script src="js/umd/popper.min.js"></script>
+        <script src="js/bootstrap.min.js"></script>                    
+        <script src='js/slick.min.js'></script>
+        <script src="js/script.min.js"></script>
+        <script src="js/nav.min.js"></script>    
+        
+    </body>
+</html>

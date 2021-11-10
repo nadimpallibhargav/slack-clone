@@ -1,0 +1,459 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title>Assignment</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">    
+        <link rel="stylesheet" href="css/bootstrap.min.css">
+        <link rel='stylesheet' href='css/slick.css'>
+        <link rel='stylesheet' href='css/slick-theme.css'>
+        <link rel="stylesheet" href="fonts/css/all.min.css"/>    
+        <link rel="stylesheet" href="css/style.css">
+        <link rel="stylesheet" href="css/nav.css">
+        <link rel="icon" href="img/icon.jpg" type="image/x-icon"/>        
+       
+    </head>
+    <body>
+        <header>
+            <nav>                
+                <div class="logo">
+                    <a href="index.html">
+                        <svg height="25" width="100" class="c-slacklogo--white" viewBox="0 0 240 60" xmlns="http://www.w3.org/2000/svg" shape-rendering="geometricPrecision"><title>Assignment</title><g fill="none"><path d="m75.663 47.477 2.929-6.846c3.207 2.375 7.39 3.632 11.574 3.632 3.068 0 5.02-1.187 5.02-3.003-.07-5.03-18.477-1.118-18.617-13.764-.07-6.427 5.648-11.387 13.737-11.387 4.81 0 9.622 1.188 13.038 3.913l-2.737 6.992c-3.143-2.021-7.025-3.43-10.72-3.43-2.51 0-4.184 1.187-4.184 2.725.07 4.96 18.618 2.235 18.827 14.322 0 6.567-5.579 11.178-13.528 11.178-5.856 0-11.225-1.397-15.34-4.332m116.629-9.325a8.498 8.498 0 0 1 -7.405 4.33c-4.698 0-8.506-3.816-8.506-8.523s3.808-8.523 8.506-8.523a8.498 8.498 0 0 1 7.405 4.33l8.143-4.52c-3.05-5.451-8.868-9.137-15.548-9.137-9.839 0-17.815 7.991-17.815 17.85 0 9.858 7.976 17.85 17.815 17.85 6.68 0 12.498-3.686 15.548-9.137zm-82.477 12.958h10.18v-49.86h-10.179zm95.761-49.86v49.86h10.18v-14.938l12.063 14.938h13.012l-15.34-17.746 14.224-16.559h-12.454l-11.505 13.767v-29.322zm-54.218 15.557v4.053c-1.673-2.795-5.787-4.751-10.11-4.751-8.925 0-15.967 7.895-15.967 17.815s7.042 17.885 15.967 17.885c4.323 0 8.437-1.956 10.11-4.751v4.052h10.18v-34.303zm0 21.414c-1.464 2.445-4.532 4.26-7.948 4.26-4.699 0-8.507-3.815-8.507-8.522s3.808-8.523 8.507-8.523c3.416 0 6.484 1.886 7.948 4.4z" fill="#ffffff"></path><path d="m21.902.148c-3.299 0-5.973 2.68-5.973 5.985a5.979 5.979 0 0 0 5.973 5.985h5.974v-5.985a5.98 5.98 0 0 0 -5.974-5.985m0 15.96h-15.929c-3.299 0-5.973 2.68-5.973 5.986 0 3.305 2.674 5.985 5.973 5.985h15.93c3.298 0 5.973-2.68 5.973-5.985 0-3.306-2.675-5.986-5.974-5.986" fill="#36c5f0"></path><path d="m59.734 22.094c0-3.306-2.675-5.986-5.974-5.986s-5.973 2.68-5.973 5.986v5.985h5.973a5.98 5.98 0 0 0 5.974-5.985m-15.929 0v-15.961a5.98 5.98 0 0 0 -5.974-5.985c-3.299 0-5.973 2.68-5.973 5.985v15.96c0 3.307 2.674 5.987 5.973 5.987a5.98 5.98 0 0 0 5.974-5.985" fill="#2eb67d"></path><path d="m37.831 60a5.98 5.98 0 0 0 5.974-5.985 5.98 5.98 0 0 0 -5.974-5.985h-5.973v5.985c0 3.305 2.674 5.985 5.973 5.985m0-15.96h15.93c3.298 0 5.973-2.68 5.973-5.986a5.98 5.98 0 0 0 -5.974-5.985h-15.929c-3.299 0-5.973 2.68-5.973 5.985a5.979 5.979 0 0 0 5.973 5.985" fill="#ecb22e"></path><path d="m0 38.054a5.979 5.979 0 0 0 5.973 5.985 5.98 5.98 0 0 0 5.974-5.985v-5.985h-5.974c-3.299 0-5.973 2.68-5.973 5.985m15.929 0v15.96c0 3.306 2.674 5.986 5.973 5.986a5.98 5.98 0 0 0 5.974-5.985v-15.961a5.979 5.979 0 0 0 -5.974-5.985c-3.299 0-5.973 2.68-5.973 5.985" fill="#e01e5a"></path></g></svg>
+                        <svg width="100" class="c-slacklogo--color" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 240 60" shape-rendering="geometricPrecision"><title>Assignment</title><path d="m75.663 47.477 2.929-6.846c3.207 2.375 7.39 3.632 11.574 3.632 3.068 0 5.02-1.187 5.02-3.003-.07-5.03-18.477-1.118-18.617-13.764-.07-6.427 5.648-11.387 13.737-11.387 4.81 0 9.622 1.188 13.038 3.913l-2.737 6.992c-3.143-2.021-7.025-3.43-10.72-3.43-2.51 0-4.184 1.187-4.184 2.725.07 4.96 18.618 2.235 18.827 14.322 0 6.567-5.579 11.178-13.528 11.178-5.856 0-11.225-1.397-15.34-4.332m116.629-9.325a8.498 8.498 0 0 1 -7.405 4.33c-4.698 0-8.506-3.816-8.506-8.523s3.808-8.523 8.506-8.523a8.498 8.498 0 0 1 7.405 4.33l8.143-4.52c-3.05-5.451-8.868-9.137-15.548-9.137-9.839 0-17.815 7.991-17.815 17.85 0 9.858 7.976 17.85 17.815 17.85 6.68 0 12.498-3.686 15.548-9.137zm-82.477 12.958h10.18v-49.86h-10.179zm95.761-49.86v49.86h10.18v-14.938l12.063 14.938h13.012l-15.34-17.746 14.224-16.559h-12.454l-11.505 13.767v-29.322zm-54.218 15.557v4.053c-1.673-2.795-5.787-4.751-10.11-4.751-8.925 0-15.967 7.895-15.967 17.815s7.042 17.885 15.967 17.885c4.323 0 8.437-1.956 10.11-4.751v4.052h10.18v-34.303zm0 21.414c-1.464 2.445-4.532 4.26-7.948 4.26-4.699 0-8.507-3.815-8.507-8.522s3.808-8.523 8.507-8.523c3.416 0 6.484 1.886 7.948 4.4z"></path><path d="m21.902.148c-3.299 0-5.973 2.68-5.973 5.985a5.979 5.979 0 0 0 5.973 5.985h5.974v-5.985a5.98 5.98 0 0 0 -5.974-5.985m0 15.96h-15.929c-3.299 0-5.973 2.68-5.973 5.986 0 3.305 2.674 5.985 5.973 5.985h15.93c3.298 0 5.973-2.68 5.973-5.985 0-3.306-2.675-5.986-5.974-5.986" fill="#36C5F0"></path><path d="m59.734 22.094c0-3.306-2.675-5.986-5.974-5.986s-5.973 2.68-5.973 5.986v5.985h5.973a5.98 5.98 0 0 0 5.974-5.985m-15.929 0v-15.961a5.98 5.98 0 0 0 -5.974-5.985c-3.299 0-5.973 2.68-5.973 5.985v15.96c0 3.307 2.674 5.987 5.973 5.987a5.98 5.98 0 0 0 5.974-5.985" fill="#2EB67D"></path><path d="m37.831 60a5.98 5.98 0 0 0 5.974-5.985 5.98 5.98 0 0 0 -5.974-5.985h-5.973v5.985c0 3.305 2.674 5.985 5.973 5.985m0-15.96h15.93c3.298 0 5.973-2.68 5.973-5.986a5.98 5.98 0 0 0 -5.974-5.985h-15.929c-3.299 0-5.973 2.68-5.973 5.985a5.979 5.979 0 0 0 5.973 5.985" fill="#ECB22E"></path><g><path d="m0 38.054a5.979 5.979 0 0 0 5.973 5.985 5.98 5.98 0 0 0 5.974-5.985v-5.985h-5.974c-3.299 0-5.973 2.68-5.973 5.985m15.929 0v15.96c0 3.306 2.674 5.986 5.973 5.986a5.98 5.98 0 0 0 5.974-5.985v-15.961a5.979 5.979 0 0 0 -5.974-5.985c-3.299 0-5.973 2.68-5.973 5.985" fill="#E01E5A"></path></g></svg>
+                    </a>
+                </div>
+                <li id="m-search-btn" class="s-mobile"> <i class="fa fa-search"></i> </li>
+                <div class="menu-icon">
+                    <span class="fas fa-bars"></span>
+                </div>
+                <div class="nav-items left">
+                    <svg width="100" class="c-slacklogo--color mobile" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 240 60" shape-rendering="geometricPrecision"><title>Assignment</title><path d="m75.663 47.477 2.929-6.846c3.207 2.375 7.39 3.632 11.574 3.632 3.068 0 5.02-1.187 5.02-3.003-.07-5.03-18.477-1.118-18.617-13.764-.07-6.427 5.648-11.387 13.737-11.387 4.81 0 9.622 1.188 13.038 3.913l-2.737 6.992c-3.143-2.021-7.025-3.43-10.72-3.43-2.51 0-4.184 1.187-4.184 2.725.07 4.96 18.618 2.235 18.827 14.322 0 6.567-5.579 11.178-13.528 11.178-5.856 0-11.225-1.397-15.34-4.332m116.629-9.325a8.498 8.498 0 0 1 -7.405 4.33c-4.698 0-8.506-3.816-8.506-8.523s3.808-8.523 8.506-8.523a8.498 8.498 0 0 1 7.405 4.33l8.143-4.52c-3.05-5.451-8.868-9.137-15.548-9.137-9.839 0-17.815 7.991-17.815 17.85 0 9.858 7.976 17.85 17.815 17.85 6.68 0 12.498-3.686 15.548-9.137zm-82.477 12.958h10.18v-49.86h-10.179zm95.761-49.86v49.86h10.18v-14.938l12.063 14.938h13.012l-15.34-17.746 14.224-16.559h-12.454l-11.505 13.767v-29.322zm-54.218 15.557v4.053c-1.673-2.795-5.787-4.751-10.11-4.751-8.925 0-15.967 7.895-15.967 17.815s7.042 17.885 15.967 17.885c4.323 0 8.437-1.956 10.11-4.751v4.052h10.18v-34.303zm0 21.414c-1.464 2.445-4.532 4.26-7.948 4.26-4.699 0-8.507-3.815-8.507-8.522s3.808-8.523 8.507-8.523c3.416 0 6.484 1.886 7.948 4.4z"></path><path d="m21.902.148c-3.299 0-5.973 2.68-5.973 5.985a5.979 5.979 0 0 0 5.973 5.985h5.974v-5.985a5.98 5.98 0 0 0 -5.974-5.985m0 15.96h-15.929c-3.299 0-5.973 2.68-5.973 5.986 0 3.305 2.674 5.985 5.973 5.985h15.93c3.298 0 5.973-2.68 5.973-5.985 0-3.306-2.675-5.986-5.974-5.986" fill="#36C5F0"></path><path d="m59.734 22.094c0-3.306-2.675-5.986-5.974-5.986s-5.973 2.68-5.973 5.986v5.985h5.973a5.98 5.98 0 0 0 5.974-5.985m-15.929 0v-15.961a5.98 5.98 0 0 0 -5.974-5.985c-3.299 0-5.973 2.68-5.973 5.985v15.96c0 3.307 2.674 5.987 5.973 5.987a5.98 5.98 0 0 0 5.974-5.985" fill="#2EB67D"></path><path d="m37.831 60a5.98 5.98 0 0 0 5.974-5.985 5.98 5.98 0 0 0 -5.974-5.985h-5.973v5.985c0 3.305 2.674 5.985 5.973 5.985m0-15.96h15.93c3.298 0 5.973-2.68 5.973-5.986a5.98 5.98 0 0 0 -5.974-5.985h-15.929c-3.299 0-5.973 2.68-5.973 5.985a5.979 5.979 0 0 0 5.973 5.985" fill="#ECB22E"></path><g><path d="m0 38.054a5.979 5.979 0 0 0 5.973 5.985 5.98 5.98 0 0 0 5.974-5.985v-5.985h-5.974c-3.299 0-5.973 2.68-5.973 5.985m15.929 0v15.96c0 3.306 2.674 5.986 5.973 5.986a5.98 5.98 0 0 0 5.974-5.985v-15.961a5.979 5.979 0 0 0 -5.974-5.985c-3.299 0-5.973 2.68-5.973 5.985" fill="#E01E5A"></path></g></svg>
+                    <ul class="nav navbar-nav desk">               
+                        <li class="dropdown">
+                          <a href="#" class="dropdown-toggle" data-toggle="dropdown">Product </a><i class="fas fa-chevron-down"></i>
+                          <ul class="dropdown-menu">
+                            <li><a href="#">Features</a></li>
+                            <li><a href="#">Channels</a></li>
+                            <li><a href="#">Your Digital HQ</a></li>
+                            <li><a href="#">Integrations</a></li>
+                            <li><a href="#">Security</a></li>
+                            <li><a href="#">Slack Connect</a></li>
+                            <li><a href="#">Solutions</a></li>
+                            <li><a href="#">Customers</a></li>
+                            <hr>
+                            <li><a href="#"><i class="fas fa-cloud-download-alt"></i> Download Slack</a></li>
+                          </ul>
+                        </li>
+                    </ul>
+                    <div class="dropdown mobile">
+                        <a class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        Product
+                        </a><i class="fas fa-chevron-down"></i>
+                        <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                        <a class="dropdown-item" href="#">Features</a>
+                        <a class="dropdown-item" href="#">Channels</a>
+                        <a class="dropdown-item" href="#">Your Digital HQ</a>
+                        <a class="dropdown-item" href="#">Integrations</a>
+                        <a class="dropdown-item" href="#">Security</a>
+                        <a class="dropdown-item" href="#">Slack Connect</a>
+                        <a class="dropdown-item" href="#">Solutions</a>
+                        <a class="dropdown-item" href="#">Customers</a>
+                        </div>
+                    </div>  
+                    <li><a href="enterprise.html">Enterprise</a></li>
+                    <li><a href="resources.html">Resources</a></li>
+                    <li><a href="pricing.html">Pricing</a></li>    
+                    <li id="search-btn" class="s-desk"><span class="search-icon"> <i class="fa fa-search"></i> </span></li>  
+                    <li><a href="#">Sign in</a></li> 
+                    <li class="talk"><a href="#" class="talk">TALK TO SALES</a></li>
+                    <li class="try"><a href="#"  class="try">TRY FOR FREE</a></li>
+                    <li class="download">
+                        <ul>
+                            <li class="talk signin"><a href="#" class="talk">SIGN IN </a></li>
+                            <li class="try download"><a href="#"  class="try">DOWNLOAD SLACK</a></li>
+                        </ul>
+                    </li>
+                        
+                </div>                                        
+                <div class="cancel-icon">
+                    <span class="fas fa-times"></span>
+                </div>
+                <div id="search-wrap" class="wrap-top search-wrap">
+                    <div class="width">
+                        <ul class="clearfix">                            
+                            <li class="searchleft">
+                                <svg width="150" class="c-slacklogo--color search" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 240 60" shape-rendering="geometricPrecision"><title>Slack</title><path d="m75.663 47.477 2.929-6.846c3.207 2.375 7.39 3.632 11.574 3.632 3.068 0 5.02-1.187 5.02-3.003-.07-5.03-18.477-1.118-18.617-13.764-.07-6.427 5.648-11.387 13.737-11.387 4.81 0 9.622 1.188 13.038 3.913l-2.737 6.992c-3.143-2.021-7.025-3.43-10.72-3.43-2.51 0-4.184 1.187-4.184 2.725.07 4.96 18.618 2.235 18.827 14.322 0 6.567-5.579 11.178-13.528 11.178-5.856 0-11.225-1.397-15.34-4.332m116.629-9.325a8.498 8.498 0 0 1 -7.405 4.33c-4.698 0-8.506-3.816-8.506-8.523s3.808-8.523 8.506-8.523a8.498 8.498 0 0 1 7.405 4.33l8.143-4.52c-3.05-5.451-8.868-9.137-15.548-9.137-9.839 0-17.815 7.991-17.815 17.85 0 9.858 7.976 17.85 17.815 17.85 6.68 0 12.498-3.686 15.548-9.137zm-82.477 12.958h10.18v-49.86h-10.179zm95.761-49.86v49.86h10.18v-14.938l12.063 14.938h13.012l-15.34-17.746 14.224-16.559h-12.454l-11.505 13.767v-29.322zm-54.218 15.557v4.053c-1.673-2.795-5.787-4.751-10.11-4.751-8.925 0-15.967 7.895-15.967 17.815s7.042 17.885 15.967 17.885c4.323 0 8.437-1.956 10.11-4.751v4.052h10.18v-34.303zm0 21.414c-1.464 2.445-4.532 4.26-7.948 4.26-4.699 0-8.507-3.815-8.507-8.522s3.808-8.523 8.507-8.523c3.416 0 6.484 1.886 7.948 4.4z"></path><path d="m21.902.148c-3.299 0-5.973 2.68-5.973 5.985a5.979 5.979 0 0 0 5.973 5.985h5.974v-5.985a5.98 5.98 0 0 0 -5.974-5.985m0 15.96h-15.929c-3.299 0-5.973 2.68-5.973 5.986 0 3.305 2.674 5.985 5.973 5.985h15.93c3.298 0 5.973-2.68 5.973-5.985 0-3.306-2.675-5.986-5.974-5.986" fill="#36C5F0"></path><path d="m59.734 22.094c0-3.306-2.675-5.986-5.974-5.986s-5.973 2.68-5.973 5.986v5.985h5.973a5.98 5.98 0 0 0 5.974-5.985m-15.929 0v-15.961a5.98 5.98 0 0 0 -5.974-5.985c-3.299 0-5.973 2.68-5.973 5.985v15.96c0 3.307 2.674 5.987 5.973 5.987a5.98 5.98 0 0 0 5.974-5.985" fill="#2EB67D"></path><path d="m37.831 60a5.98 5.98 0 0 0 5.974-5.985 5.98 5.98 0 0 0 -5.974-5.985h-5.973v5.985c0 3.305 2.674 5.985 5.973 5.985m0-15.96h15.93c3.298 0 5.973-2.68 5.973-5.986a5.98 5.98 0 0 0 -5.974-5.985h-15.929c-3.299 0-5.973 2.68-5.973 5.985a5.979 5.979 0 0 0 5.973 5.985" fill="#ECB22E"></path><g><path d="m0 38.054a5.979 5.979 0 0 0 5.973 5.985 5.98 5.98 0 0 0 5.974-5.985v-5.985h-5.974c-3.299 0-5.973 2.68-5.973 5.985m15.929 0v15.96c0 3.306 2.674 5.986 5.973 5.986a5.98 5.98 0 0 0 5.974-5.985v-15.961a5.979 5.979 0 0 0 -5.974-5.985c-3.299 0-5.973 2.68-5.973 5.985" fill="#E01E5A"></path></g></svg>
+                                <i class="fa fa-search"></i> 
+                                <input type='search' placeholder="Find anything (ie. channels, emoji, or reset password)"  list=text_editors>                                
+                                <datalist id="text_editors">
+                                    <select multiple size=8>
+                                    <option value="What is Slack Frontiers and why should I attend?">What is Slack Frontiers and why should I attend?
+                                    <option value="What is Slack Connect?">What is Slack Connect?		
+                                    <option value="Working with external organizations in Slack">Working with external organizations in Slack                                    
+                                    <option value="What is Slack Frontiers and why should I?">What is Slack Frontiers and why should I
+                                    <option value="What is Connect?">What is Connect?		
+                                    <option value="Working with external organizations in Slack">Working with external organizations in Slack                                    
+                                    </select>
+                                </datalist>
+                            </li>                    
+                            <li id="li-4"> <i class="fa fa-times"></i> </li>
+                            <li id="li-3"><a class="search-btn">Search</a></li>
+                        </ul>
+                    </div>
+                </div>          
+            </nav>
+        </header>
+        <main class="resourcespage">
+            <section class="secone">
+                <div class="container-fluid">
+                    <div class="row">
+                        <div class="col-xl-9 col-lg-9 col-md-12 col-sm-12 col-xs-12">
+                            <div class="secone__left">
+                                <div class="secone__heading">
+                                    <h1>Resources Library</h1>
+                                </div>
+                                <div class="secone__para">
+                                    <p>Browse resources tailored to your team, your needs and all the ways that you can get more out of Slack.</p>
+                                </div>                               
+                            </div>
+                        </div>
+                        <div class="col-xl-3 col-lg-3 col-md-12 col-sm-12 col-xs-12 pr-0">
+                            <div class="secone__right">
+                                <a href="#" class="newbtn btn-pinkbtnborder">FILTER CONTENT 
+                                <svg class="icon-filter" width="20" height="20" viewBox="0 0 20 20" fill="#611F69" xmlns="http://www.w3.org/2000/svg"><path d="M1.75 4.5C1.54333 4.5 1.36667 4.42667 1.22 4.28C1.07333 4.13333 1 3.95667 1 3.75C1 3.54333 1.07333 3.36667 1.22 3.22C1.36667 3.07333 1.54333 3 1.75 3H10.91C11.0167 2.62667 11.1967 2.29333 11.45 2C11.7033 1.7 12.0067 1.46667 12.36 1.3C12.72 1.13333 13.1 1.05 13.5 1.05C13.9 1.05 14.2767 1.13333 14.63 1.3C14.99 1.46667 15.2967 1.7 15.55 2C15.8033 2.29333 15.9833 2.62667 16.09 3H18.25C18.4567 3 18.6333 3.07333 18.78 3.22C18.9267 3.36667 19 3.54333 19 3.75C19 3.95667 18.9267 4.13333 18.78 4.28C18.6333 4.42667 18.4567 4.5 18.25 4.5H16.09C15.9833 4.87333 15.8033 5.21 15.55 5.51C15.2967 5.80333 14.99 6.03333 14.63 6.2C14.2767 6.36667 13.9 6.45 13.5 6.45C13.1 6.45 12.72 6.36667 12.36 6.2C12.0067 6.03333 11.7033 5.80333 11.45 5.51C11.1967 5.21 11.0167 4.87333 10.91 4.5H1.75ZM13.5 2.55C13.1733 2.55 12.89 2.66667 12.65 2.9C12.4167 3.13333 12.3 3.41667 12.3 3.75C12.3 4.07667 12.4167 4.36 12.65 4.6C12.89 4.83333 13.1733 4.95 13.5 4.95C13.8333 4.95 14.1167 4.83333 14.35 4.6C14.5833 4.36 14.7 4.07667 14.7 3.75C14.7 3.41667 14.5833 3.13333 14.35 2.9C14.1167 2.66667 13.8333 2.55 13.5 2.55ZM18.25 9C18.4567 9 18.6333 9.07333 18.78 9.22C18.9267 9.36667 19 9.54333 19 9.75C19 9.95667 18.9267 10.1333 18.78 10.28C18.6333 10.4267 18.4567 10.5 18.25 10.5H8.09C7.98333 10.8733 7.80333 11.21 7.55 11.51C7.29667 11.8033 6.99 12.0333 6.63 12.2C6.27667 12.3667 5.9 12.45 5.5 12.45C5.1 12.45 4.72 12.3667 4.36 12.2C4.00667 12.0333 3.70333 11.8033 3.45 11.51C3.19667 11.21 3.01667 10.8733 2.91 10.5H1.75C1.54333 10.5 1.36667 10.4267 1.22 10.28C1.07333 10.1333 1 9.95667 1 9.75C1 9.54333 1.07333 9.36667 1.22 9.22C1.36667 9.07333 1.54333 9 1.75 9H2.91C3.01667 8.62667 3.19667 8.29333 3.45 8C3.70333 7.7 4.00667 7.46667 4.36 7.3C4.72 7.13333 5.1 7.05 5.5 7.05C5.9 7.05 6.27667 7.13333 6.63 7.3C6.99 7.46667 7.29667 7.7 7.55 8C7.80333 8.29333 7.98333 8.62667 8.09 9H18.25ZM5.5 10.95C5.83333 10.95 6.11667 10.8333 6.35 10.6C6.58333 10.36 6.7 10.0767 6.7 9.75C6.7 9.41667 6.58333 9.13333 6.35 8.9C6.11667 8.66667 5.83333 8.55 5.5 8.55C5.17333 8.55 4.89 8.66667 4.65 8.9C4.41667 9.13333 4.3 9.41667 4.3 9.75C4.3 10.0767 4.41667 10.36 4.65 10.6C4.89 10.8333 5.17333 10.95 5.5 10.95ZM18.25 15C18.4567 15 18.6333 15.0733 18.78 15.22C18.9267 15.3667 19 15.5433 19 15.75C19 15.9567 18.9267 16.1333 18.78 16.28C18.6333 16.4267 18.4567 16.5 18.25 16.5H14.09C13.9833 16.8733 13.8033 17.2067 13.55 17.5C13.2967 17.8 12.99 18.0333 12.63 18.2C12.2767 18.3667 11.9 18.45 11.5 18.45C11.1 18.45 10.72 18.3667 10.36 18.2C10.0067 18.0333 9.70333 17.8 9.45 17.5C9.19667 17.2067 9.01667 16.8733 8.91 16.5H1.75C1.54333 16.5 1.36667 16.4267 1.22 16.28C1.07333 16.1333 1 15.9567 1 15.75C1 15.5433 1.07333 15.3667 1.22 15.22C1.36667 15.0733 1.54333 15 1.75 15H8.91C9.01667 14.6267 9.19667 14.2933 9.45 14C9.70333 13.7 10.0067 13.4667 10.36 13.3C10.72 13.1333 11.1 13.05 11.5 13.05C11.9 13.05 12.2767 13.1333 12.63 13.3C12.99 13.4667 13.2967 13.7 13.55 14C13.8033 14.2933 13.9833 14.6267 14.09 15H18.25ZM11.5 16.95C11.8333 16.95 12.1167 16.8333 12.35 16.6C12.5833 16.36 12.7 16.0767 12.7 15.75C12.7 15.4167 12.5833 15.1333 12.35 14.9C12.1167 14.6667 11.8333 14.55 11.5 14.55C11.1733 14.55 10.89 14.6667 10.65 14.9C10.4167 15.1333 10.3 15.4167 10.3 15.75C10.3 16.0767 10.4167 16.36 10.65 16.6C10.89 16.8333 11.1733 16.95 11.5 16.95Z"></path></svg>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>                
+            </section>
+
+            <section class="seceight sectwo">
+                <div class="container-fluid">
+                    <div class="resourcessliderone seceight__slider">
+                        <div class="seceight__slides">
+                            <div class="sectwo__box">
+                                <div class="row">
+                                    <div class="col-xl-3 col-lg-3 col-md-3 col-sm-3 col-xs-3">
+                                        <img src="img/resources/resources-nav-help-center.jpg" alt="image" width="92" height="92">
+                                    </div>
+                                    <div class="col-xl-9 col-lg-9 col-md-9 col-sm-9 col-xs-9">
+                                        <h4><a>Visit the Help Centre</a></h4>
+                                        <p>Walkthroughs, tips and videos for how to get connected, stay organised and do whatever you need to do in Slack.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="seceight__slides">
+                            <div class="sectwo__box">
+                                <div class="row">
+                                    <div class="col-xl-3 col-lg-3 col-md-3 col-sm-3 col-xs-3">
+                                        <img src="img/resources/resources-nav-webinar.jpg" alt="image" width="92" height="92">
+                                    </div>
+                                    <div class="col-xl-9 col-lg-9 col-md-9 col-sm-9 col-xs-9">
+                                        <h4><a>Register for a webinar</a></h4>
+                                        <p>Watch and learn more about Slack in our live and on-demand webinars.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="seceight__slides">
+                            <div class="sectwo__box">
+                                <div class="row">
+                                    <div class="col-xl-3 col-lg-3 col-md-3 col-sm-3 col-xs-3">
+                                        <img src="img/resources/slack-blog-illustration.jpg" alt="image" width="92" height="92">
+                                    </div>
+                                    <div class="col-xl-9 col-lg-9 col-md-9 col-sm-9 col-xs-9">
+                                        <h4><a>Read the Slack blog</a></h4>
+                                        <p>Articles on collaboration, transformation and more, from industry experts, Slack leaders and the Slack team.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>            
+            </section>
+
+            <section class="secthree">
+                <div class="container-fluid">
+                    <div class="row">
+                        <div class="col-xl-8 col-lg-12 col-md-12 col-sm-12 col-xs-12 px-0">
+                            <div class="secthree__left">
+                                <div class="row">
+                                    <div class="col-xl-7 col-lg-7 col-md-7 col-sm-7 col-xs-7 px-0">  
+                                        <img src="img/resources/img-hero-digital-first.gif" alt="gif" width="475" height="475">
+                                    </div>
+                                    <div class="col-xl-5 col-lg-5 col-md-5 col-sm-5 col-xs-5">
+                                        <p><span>Guide</span></p>
+                                        <h3>The digital-first toolkit</h3>
+                                        <p>Leading organisations share their tips for supporting workplace collaboration – no matter where or when that work happens</p>
+                                        <a href="#" class="link-text">Read more <i class="fas fa-long-arrow-alt-right"></i></a>
+                                    </div> 
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-xl-4 col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                            <div class="secthree__right">
+                                <P><span>Guide</span></P>
+                                <h4><a href="#">Top five tips for getting started in Slack</a></h4>
+                                <p class="pborder">Get started on Slack with confidence using these quick tips for communicating and working in Slack channels</p>
+                                <P><span>Guide</span></P>
+                                <h4><a href="#">Introducing your partners to Slack Connect</a></h4>
+                                <p class="pborder">Simple tips and templates to help you onboard your partners to working with you in channels.</p>
+                            </div>
+                        </div>     
+                    </div>
+                </div>                
+            </section>
+            
+            
+            <section class="secfour">
+                <div class="container-fluid">
+                    <div class="row secfour__head">
+                        <div class="col-xl-8 col-lg-8 col-md-8 col-sm-12 col-xs-12">
+                            <h2>Browse all resources</h2>
+                        </div>
+                        <div class="col-xl-4 col-lg-4 col-md-4 col-sm-12 col-xs-12 secfour__rightbtn">
+                            <div class="secfour__right">
+                                <a href="#" class="newbtn btn-pinkbtnborder">FILTER CONTENT 
+                                <svg class="icon-filter" width="20" height="20" viewBox="0 0 20 20" fill="#611F69" xmlns="http://www.w3.org/2000/svg"><path d="M1.75 4.5C1.54333 4.5 1.36667 4.42667 1.22 4.28C1.07333 4.13333 1 3.95667 1 3.75C1 3.54333 1.07333 3.36667 1.22 3.22C1.36667 3.07333 1.54333 3 1.75 3H10.91C11.0167 2.62667 11.1967 2.29333 11.45 2C11.7033 1.7 12.0067 1.46667 12.36 1.3C12.72 1.13333 13.1 1.05 13.5 1.05C13.9 1.05 14.2767 1.13333 14.63 1.3C14.99 1.46667 15.2967 1.7 15.55 2C15.8033 2.29333 15.9833 2.62667 16.09 3H18.25C18.4567 3 18.6333 3.07333 18.78 3.22C18.9267 3.36667 19 3.54333 19 3.75C19 3.95667 18.9267 4.13333 18.78 4.28C18.6333 4.42667 18.4567 4.5 18.25 4.5H16.09C15.9833 4.87333 15.8033 5.21 15.55 5.51C15.2967 5.80333 14.99 6.03333 14.63 6.2C14.2767 6.36667 13.9 6.45 13.5 6.45C13.1 6.45 12.72 6.36667 12.36 6.2C12.0067 6.03333 11.7033 5.80333 11.45 5.51C11.1967 5.21 11.0167 4.87333 10.91 4.5H1.75ZM13.5 2.55C13.1733 2.55 12.89 2.66667 12.65 2.9C12.4167 3.13333 12.3 3.41667 12.3 3.75C12.3 4.07667 12.4167 4.36 12.65 4.6C12.89 4.83333 13.1733 4.95 13.5 4.95C13.8333 4.95 14.1167 4.83333 14.35 4.6C14.5833 4.36 14.7 4.07667 14.7 3.75C14.7 3.41667 14.5833 3.13333 14.35 2.9C14.1167 2.66667 13.8333 2.55 13.5 2.55ZM18.25 9C18.4567 9 18.6333 9.07333 18.78 9.22C18.9267 9.36667 19 9.54333 19 9.75C19 9.95667 18.9267 10.1333 18.78 10.28C18.6333 10.4267 18.4567 10.5 18.25 10.5H8.09C7.98333 10.8733 7.80333 11.21 7.55 11.51C7.29667 11.8033 6.99 12.0333 6.63 12.2C6.27667 12.3667 5.9 12.45 5.5 12.45C5.1 12.45 4.72 12.3667 4.36 12.2C4.00667 12.0333 3.70333 11.8033 3.45 11.51C3.19667 11.21 3.01667 10.8733 2.91 10.5H1.75C1.54333 10.5 1.36667 10.4267 1.22 10.28C1.07333 10.1333 1 9.95667 1 9.75C1 9.54333 1.07333 9.36667 1.22 9.22C1.36667 9.07333 1.54333 9 1.75 9H2.91C3.01667 8.62667 3.19667 8.29333 3.45 8C3.70333 7.7 4.00667 7.46667 4.36 7.3C4.72 7.13333 5.1 7.05 5.5 7.05C5.9 7.05 6.27667 7.13333 6.63 7.3C6.99 7.46667 7.29667 7.7 7.55 8C7.80333 8.29333 7.98333 8.62667 8.09 9H18.25ZM5.5 10.95C5.83333 10.95 6.11667 10.8333 6.35 10.6C6.58333 10.36 6.7 10.0767 6.7 9.75C6.7 9.41667 6.58333 9.13333 6.35 8.9C6.11667 8.66667 5.83333 8.55 5.5 8.55C5.17333 8.55 4.89 8.66667 4.65 8.9C4.41667 9.13333 4.3 9.41667 4.3 9.75C4.3 10.0767 4.41667 10.36 4.65 10.6C4.89 10.8333 5.17333 10.95 5.5 10.95ZM18.25 15C18.4567 15 18.6333 15.0733 18.78 15.22C18.9267 15.3667 19 15.5433 19 15.75C19 15.9567 18.9267 16.1333 18.78 16.28C18.6333 16.4267 18.4567 16.5 18.25 16.5H14.09C13.9833 16.8733 13.8033 17.2067 13.55 17.5C13.2967 17.8 12.99 18.0333 12.63 18.2C12.2767 18.3667 11.9 18.45 11.5 18.45C11.1 18.45 10.72 18.3667 10.36 18.2C10.0067 18.0333 9.70333 17.8 9.45 17.5C9.19667 17.2067 9.01667 16.8733 8.91 16.5H1.75C1.54333 16.5 1.36667 16.4267 1.22 16.28C1.07333 16.1333 1 15.9567 1 15.75C1 15.5433 1.07333 15.3667 1.22 15.22C1.36667 15.0733 1.54333 15 1.75 15H8.91C9.01667 14.6267 9.19667 14.2933 9.45 14C9.70333 13.7 10.0067 13.4667 10.36 13.3C10.72 13.1333 11.1 13.05 11.5 13.05C11.9 13.05 12.2767 13.1333 12.63 13.3C12.99 13.4667 13.2967 13.7 13.55 14C13.8033 14.2933 13.9833 14.6267 14.09 15H18.25ZM11.5 16.95C11.8333 16.95 12.1167 16.8333 12.35 16.6C12.5833 16.36 12.7 16.0767 12.7 15.75C12.7 15.4167 12.5833 15.1333 12.35 14.9C12.1167 14.6667 11.8333 14.55 11.5 14.55C11.1733 14.55 10.89 14.6667 10.65 14.9C10.4167 15.1333 10.3 15.4167 10.3 15.75C10.3 16.0767 10.4167 16.36 10.65 16.6C10.89 16.8333 11.1733 16.95 11.5 16.95Z"></path></svg>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-xl-3 col-lg-3 col-md-6 col-sm-12 col-xs-12">
+                            <div class="secfour__box">
+                                <img src="img/resources/platform-user-EDU-ebook-promo-hero-670x500.jpg" alt="image" width="280" height="209"> 
+                                <h6>E-book</h6>
+                                <h3><a href="#">16 tips for working smarter with Slack apps and workflows</a></h3>
+                                <p>Learn how to streamline your workday with time-saving tools</p>
+                            </div>
+                        </div>
+                        <div class="col-xl-3 col-lg-3 col-md-6 col-sm-12 col-xs-12">
+                            <div class="secfour__box">
+                                <img src="img/resources/img-hero-platform-education.jpg" alt="image" width="280" height="280">
+                                <h6>Guide</h6>
+                                <h3><a href="#">Get more done with Slack apps and workflows</a></h3>
+                                <p>Learn about the tools that can save time and streamline your workday</p>
+                            </div>
+                        </div>
+                        <div class="col-xl-3 col-lg-3 col-md-6 col-sm-12 col-xs-12">
+                            <div class="secfour__box">
+                                <img src="img/resources/hero-lauch-slack-university.jpg" alt="image" widht="280" height="280">
+                                <h6>Guide</h6>
+                                <h3><a href="#">Set up a Slack workspace for your college or university course</a></h3>
+                                <p>Learn how to set up a productive digital classroom environment in no time.</p>
+                            </div>
+                        </div>
+                        <div class="col-xl-3 col-lg-3 col-md-6 col-sm-12 col-xs-12">
+                            <div class="secfour__box">
+                                <img src="img/resources/Collaboration-hands-webinar-anim-header.gif" alt="image" width="280" height="156">
+                                <h6>Report</h6>
+                                <h3><a href="#">Team Collaboration: The Foundation for a Digital-First Workplace</a></h3>
+                                <p>Recent research by Metrigy finds that virtual teamwork thrives with a platform-centric approach</p>
+                            </div>
+                        </div>
+                        <div class="col-xl-3 col-lg-3 col-md-6 col-sm-12 col-xs-12">
+                            <div class="secfour__box">
+                                <div class="row">
+                                    <div class="col-xl-12 col-lg-12 col-md-12 col-sm-6 col-xs-6">
+                                        <img src="img/resources/admin-roadmap-preview-webinar.jpg" alt="image" width="280" height="157">
+                                    </div>
+                                    <div class="col-xl-12 col-lg-12 col-md-12 col-sm-6 col-xs-6 img">
+                                        <figcaption class="figure-caption">REGISTER</figcaption>   
+                                        <h6>Webinar</h6>
+                                        <h3><a href="#">Admin Roadmap Preview</a></h3>
+                                        <p>Tune into our quarterly Admin Roadmap Preview webinar for a special look at what’s coming soon, as well as what’s recently launched</p>
+                                        <img class="left" src="img/resources/mat-mullen-webinar-headshot.jpg" alt="img" width="43" height="43">
+                                        <img class="right" src="img/resources/Screen-Shot.jpg" alt="img"  width="43" height="43">
+                                    </div>
+                                </div>                                                                
+                            </div>
+                        </div>
+                        <div class="col-xl-3 col-lg-3 col-md-6 col-sm-12 col-xs-12">
+                            <div class="secfour__box">
+                                <img src="img/resources/Dev-Eng-Collection-Hero.jpg" alt="image" width="280" height="280">
+                                <h6>Guide</h6>
+                                <h3><a href="#">Speed up software development with Slack</a></h3>
+                                <p>Rally teams in channels to build better, resolve issues quicker and bring efficiency to every stage of the development life cycle</p>
+                            </div>
+                        </div>
+                        <div class="col-xl-3 col-lg-3 col-md-6 col-sm-12 col-xs-12">
+                            <div class="secfour__box">
+                                <img src="img/resources/2021-06-resources-experts-hero.jpg" alt="image" width="280" height="280">
+                                <h6>Guide</h6>
+                                <h3><a href="#">Solve problems aloud with Slack huddles</a></h3>
+                                <p>Six ways to recreate quick, informal office discussions in a work-from-anywhere world</p>
+                            </div>
+                        </div>
+                        <div class="col-xl-3 col-lg-3 col-md-6 col-sm-12 col-xs-12">
+                            <div class="secfour__box">
+                                <div class="row">
+                                    <div class="col-xl-12 col-lg-12 col-md-12 col-sm-6 col-xs-6">
+                                        <img src="img/resources/slack-admins-demand-webinar.jpg" alt="image" width="280" height="154">
+                                    </div>
+                                    <div class="col-xl-12 col-lg-12 col-md-12 col-sm-6 col-xs-6 img">
+                                        <figcaption class="figure-caption">REGISTER</figcaption>                             
+                                        <h6>Webinar</h6>
+                                        <h3><a href="#">Admin Essentials 101</a></h3>
+                                        <p>In this session, we’ll cover the ins and outs of your new role as a Slack admin</p>
+                                        <img class="left" src="img/resources/mat-mullen-webinar-headshot.jpg" alt="img" width="43" height="43">
+                                        <img class="right" src="img/resources/Screen-Shot.jpg" alt="img"  width="43" height="43">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-xl-3 col-lg-3 col-md-6 col-sm-12 col-xs-12">
+                            <div class="secfour__box">
+                                <img src="img/resources/hww-hero-670x500-Dev.gif" alt="image" widht="280" height="209">
+                                <h6>E-book</h6>
+                                <h3><a href="#">Reinventing work in development teams</a></h3>
+                                <p>How software teams use Slack to stay productive and engaged in a work-from-home world</p>
+                            </div>
+                        </div>
+                        <div class="col-xl-3 col-lg-3 col-md-6 col-sm-12 col-xs-12">
+                            <div class="secfour__box">
+                                <img src="img/resources/hww-hero-670x500-Sales.gif" alt="image" width="280" height="209">
+                                <h6>E-book</h6>
+                                <h3><a href="#">Reinventing sales</a></h3>
+                                <p>How sales teams are using Slack to unlock greater revenue in the new world of work</p>
+                            </div>
+                        </div>
+                        <div class="col-xl-3 col-lg-3 col-md-6 col-sm-12 col-xs-12">
+                            <div class="secfour__box">
+                                <img src="img/resources/hww-hero-670x500-ITDM.gif" alt="image" width="280" height="209">
+                                <h6>E-book</h6>
+                                <h3><a href="#">Reinventing work in IT</a></h3>
+                                <p>How IT leaders are using Slack to unlock the full potential of their people and tools</p>
+                            </div>
+                        </div>
+                        <div class="col-xl-3 col-lg-3 col-md-6 col-sm-12 col-xs-12">
+                            <div class="secfour__box">
+                                <img src="img/resources/hww-hero-670x500-Support.gif" alt="image" width="280" height="209">
+                                <h6>E-book</h6>
+                                <h3><a href="#">Reinventing customer service</a></h3>
+                                <p>How post-pandemic service teams are using Slack to reshape the discipline</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row numbers">
+                        <div class="col-12">
+                            <a href="#" class="active">1</a><a href="#">2</a><a href="#">3</a>...<a href="#">9</a><a href="#"><i class="fas fa-long-arrow-alt-right"></i></a>
+                        </div>
+                    </div>
+                </div>            
+            </section>
+
+            
+
+        </main>
+        <footer class="secfooter">
+            <div class="secfootertop">
+               <div class="container-fluid">
+                    <h2>Try Slack with your team for free</h2>
+                    <div class="secfootertop__btn">
+                        <a href="#" class="newbtn btn-pinkbtnborder mt-2">GET STARTED</a>
+                    </div>
+               </div>
+            </div>
+            <div class="secfooterbottom">
+                <div class="container-fluid">
+                    <div class="row logo">
+                        <div class="col-xl-2 col-lg-2 colmd-2 col-sm-12 col-xs-12">
+                            <img src="img/foot-logo.jpg" alt="image" width="57" height="56">
+                        </div>
+                        <div class="col-xl-2 col-lg-2 colmd-2 col-sm-12 col-xs-12">
+                            <details id="myDetailsone">
+                                <summary>WHY SLACK? <i class="fas fa-chevron-down"></i></summary>
+                                <ul>
+                                  <li><a href="#">Slack vs email</a></li>
+                                  <li><a href="#">Channels</a></li>
+                                  <li><a href="#">Engagement</a></li>
+                                  <li><a href="#">Scale</a></li>
+                                  <li><a href="#">Watch the demo</a></li>
+                                </ul>
+                            </details>
+                        </div>
+                        <div class="col-xl-2 col-lg-2 colmd-2 col-sm-12 col-xs-12">
+                            <details  id="myDetailstwo">
+                                <summary>PRODUCT  <i class="fas fa-chevron-down"></i></summary>
+                                <ul>
+                                  <li><a href="#">Features</a></li>
+                                  <li><a href="#">Integrations</a></li>
+                                  <li><a href="#">Enterprise</a></li>
+                                  <li><a href="#">Solutions</a></li>
+                                </ul>
+                            </details>
+                        </div>
+                        <div class="col-xl-2 col-lg-2 colmd-2 col-sm-12 col-xs-12">
+                            <details  id="myDetailsthree">
+                                <summary>PRICING  <i class="fas fa-chevron-down"></i></summary>
+                                <ul>
+                                  <li><a href="#">Subscriptions</a></li>
+                                  <li><a href="#">Paid vs free</a></li>
+                                </ul>
+                            </details>
+                        </div>
+                        <div class="col-xl-2 col-lg-2 colmd-2 col-sm-12 col-xs-12">
+                            <details  id="myDetailsfour">
+                                <summary>RESOURCES  <i class="fas fa-chevron-down"></i></summary>
+                                <ul>
+                                  <li><a href="#">Partners</a></li>
+                                  <li><a href="#">Developers</a></li>
+                                  <li><a href="#">Apps</a></li>
+                                  <li><a href="#">Blog</a></li>
+                                  <li><a href="#">Help Centre</a></li>
+                                  <li><a href="#">Events</a></li>
+                                </ul>
+                            </details>
+                        </div>
+                        <div class="col-xl-2 col-lg-2 colmd-2 col-sm-12 col-xs-12">
+                            <details  id="myDetailsfive">
+                                <summary>COMPANY  <i class="fas fa-chevron-down"></i></summary>
+                                <ul>
+                                  <li><a href="#">About us</a></li>
+                                  <li><a href="#">Leadership</a></li>
+                                  <li><a href="#">Investor relations</a></li>
+                                  <li><a href="#">News</a></li>
+                                  <li><a href="#">Media kit</a></li>
+                                  <li><a href="#">Careers</a></li>
+                                </ul>
+                            </details>
+                        </div>
+                    </div>
+                    <hr>
+                    <div class="row social">
+                        <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12 col-xs-12">
+                            <a href="#">Status</a>
+                            <a href="#">Privacy </a>
+                            <a href="#">Terms </a>
+                            <a href="#">Cookies preferences </a>
+                            <a href="#">Contact Us </a>
+                            <a href="#"><i class="fas fa-globe"></i> Change region</a>
+                        </div>
+                        <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12 col-xs-12 right    ">
+                            <a href="#" class="download"><i class="fas fa-cloud-download-alt"></i> Download Slack</a>
+                            <a target="_blank" href="https://twitter.com/slackhq"><i class="fab fa-twitter"></i></a>
+                            <a target="_blank" href="https://facebook.com/slackhq"><i class="fab fa-facebook-square"></i></a>
+                            <a target="_blank" href="https://www.youtube.com/channel/UCY3YECgeBcLCzIrFLP4gblw"><i class="fab fa-youtube"></i></a>
+                            <a target="_blank" href="https://www.linkedin.com/company/tiny-spec-inc/"><i class="fab fa-linkedin"></i></a>
+                        </div>
+                    </div>
+                    <div class="row copy">
+                        <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                            <p>©2021 Slack Technologies, LLC, a Salesforce company. All rights reserved. Various trademarks held by their respective owners.</p>
+                        </div>                       
+                    </div>
+                </div>
+            </div>
+        </footer>
+        <script src='js/jquery.min.js'></script>
+        <script src="js/umd/popper.min.js"></script>
+        <script src="js/bootstrap.min.js"></script>                    
+        <script src='js/slick.min.js'></script>
+        <script src="js/script.min.js"></script>
+        <script src="js/nav.min.js"></script>    
+        
+    </body>
+</html>
